@@ -1,0 +1,26 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.sun_follower": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"texture.variant0",
+						"texture.variant1",
+						"texture.variant2",
+						"texture.variant3",
+						"texture.variant4",
+						"texture.variant5"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": ["Array.skins[query.variant]"]
+		}
+	}
+}

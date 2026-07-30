@@ -1,0 +1,28 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Tonalli RP",
+		"description": "Tonalli Addon",
+		"min_engine_version": [1, 26, 30],
+		"uuid": "50e028bc-8d91-4576-9cc0-def56ac5cded",
+		"version": [1, 0, 0]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "06a2cd8a-5074-43ee-bc72-f77e67d84da2",
+			"version": [1, 0, 0]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "da97c991-f1d7-40a7-b753-27558849139b",
+			"version": [1, 0, 0]
+		}
+	],
+	"metadata": {
+		"authors": ["DungeonsEstudio"],
+		"product_type": "addon"
+	},
+	"capabilities": ["pbr"]
+}

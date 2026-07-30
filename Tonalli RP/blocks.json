@@ -1,0 +1,106 @@
+{
+	"format_version": "1.1.0",
+	"to:blue_estuco": {
+		"sound": "stone",
+		"textures": "blue_estuco"
+	},
+	"to:ornamental_veneered_estuco": {
+		"sound": "stone",
+		"textures": {
+			"side": "ornamental_veneered_estuco",
+			"up": "veneered_estuco_top",
+			"down": "white_estuco"
+		}
+	},
+	"to:red_estuco": {
+		"sound": "stone",
+		"textures": "red_estuco"
+	},
+	"to:veneered_estuco": {
+		"sound": "stone",
+		"textures": {
+			"side": "veneered_estuco",
+			"up": "veneered_estuco_top",
+			"down": "white_estuco"
+		}
+	},
+	"to:white_estuco": {
+		"sound": "stone",
+		"textures": "white_estuco"
+	},
+	"to:yellow_estuco": {
+		"sound": "stone",
+		"textures": "yellow_estuco"
+	},
+
+	"to:broken_volcanic_stone_bricks": {
+		"sound": "stone",
+		"textures": "broken_volcanic_stone_bricks"
+	},
+	"to:chiseled_volcanic_stone": {
+		"sound": "stone",
+		"textures": "chiseled_volcanic_stone"
+	},
+	"to:mossy_volcanic_stone_bricks": {
+		"sound": "stone",
+		"textures": "mossy_volcanic_stone_bricks"
+	},
+	"to:volcanic_stone": {
+		"sound": "stone",
+		"textures": "volcanic_stone"
+	},
+	"to:volcanic_stone_bricks": {
+		"sound": "stone",
+		"textures": "volcanic_stone_bricks"
+	},
+	"to:polished_volcanic_stone": {
+		"sound": "stone",
+		"textures": "polished_volcanic_stone"
+	},
+
+	"to:engraved_gold": {
+		"sound": "stone",
+		"textures": {
+			"side": "engraved_gold",
+			"up": "veneered_estuco_top",
+			"down": "white_estuco"
+		}
+	},
+
+	"to:engraved_stone": {
+		"sound": "stone",
+		"textures": {
+			"down": "to_engraved_stone_top",
+			"east": "engraved_stone_east",
+			"north": "engraved_stone_north",
+			"south": "engraved_stone_south",
+			"up": "to_engraved_stone_top",
+			"west": "engraved_stone_west"
+		}
+	},
+
+	"to:limestone_bricks": {
+		"sound": "stone",
+		"textures": "limestone_bricks"
+	},
+	"to:broken_limestone_bricks": {
+		"sound": "stone",
+		"textures": "broken_limestone_bricks"
+	},
+	"to:chiseled_limestone": {
+		"sound": "stone",
+		"textures": "chiseled_limestone"
+	},
+	"to:mossy_limestone_bricks": {
+		"sound": "stone",
+		"textures": "mossy_limestone_bricks"
+	},
+	"to:polished_limestone": {
+		"sound": "stone",
+		"textures": "polished_limestone"
+	},
+	"to:limestone": {
+		"sound": "stone",
+		"textures": "limestone"
+	}
+}

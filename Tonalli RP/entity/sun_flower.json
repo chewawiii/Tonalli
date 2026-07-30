@@ -1,0 +1,39 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "to:sun_follower",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"variant0": "textures/entity/sun_follower/sun_follower_0.png",
+				"variant1": "textures/entity/sun_follower/sun_follower_1.png",
+				"variant2": "textures/entity/sun_follower/sun_follower_2.png",
+				"variant3": "textures/entity/sun_follower/sun_follower_3.png",
+				"variant4": "textures/entity/sun_follower/sun_follower_4.png",
+				"variant5": "textures/entity/sun_follower/sun_follower_5.png"
+			},
+			"geometry": {
+				"default": "geometry.sun_follower"
+			},
+			"render_controllers": ["controller.render.sun_follower"],
+			"animations": {
+				"walk_controller": "controller.animation.run_target",
+				"attack_controller": "controller.animation.melee",
+				"idle": "animation.sun_follower.idle",
+				"walk": "animation.sun_follower.walk",
+				"run": "animation.sun_follower.run",
+				"attack": "animation.sun_follower.attack",
+				"look_at_target": "animation.basic.look_at_target"
+			},
+			"scripts": {
+				"animate": ["walk_controller", "attack_controller", "look_at_target"]
+			},
+			"spawn_egg": {
+				"overlay_color": "#92b472",
+				"base_color": "#9fb3b3"
+			}
+		}
+	}
+}

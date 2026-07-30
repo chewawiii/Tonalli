@@ -1,0 +1,21 @@
+{
+	"resource_pack_name": "tonalli",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"ahuitzolt_heart": {
+			"textures": "textures/items/ahuitzolt_heart.png"
+		},
+		"jade_fragment": {
+			"textures": "textures/items/jade_fragment.png"
+		},
+		"jade_heart": {
+			"textures": "textures/items/jade_heart.png"
+		},
+		"macuahuitl": {
+			"textures": "textures/items/macuahuitl.png"
+		},
+		"corn": {
+			"textures": "textures/items/corn.png"
+		}
+	}
+}

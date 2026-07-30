@@ -1,0 +1,15 @@
+{
+	"format_version": "1.26.30",
+	"minecraft:item": {
+		"description": {
+			"identifier": "to:jade_heart",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:icon": "jade_heart",
+			"minecraft:max_stack_size": 1
+		}
+	}
+}

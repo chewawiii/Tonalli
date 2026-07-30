@@ -1,0 +1,14 @@
+{
+	"format_version": "1.26.30",
+	"minecraft:item": {
+		"description": {
+			"identifier": "to:jade_fragment",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:icon": "jade_fragment"
+		}
+	}
+}

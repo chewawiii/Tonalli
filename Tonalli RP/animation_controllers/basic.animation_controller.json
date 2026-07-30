@@ -1,0 +1,83 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.walk": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"animations": ["idle"],
+					"transitions": [
+						{
+							"walk": "query.modified_move_speed > 0.1"
+						}
+					]
+				},
+				"walk": {
+					"animations": ["walk"],
+					"transitions": [
+						{
+							"idle": "query.modified_move_speed < 0.1"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.run_target": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"animations": ["idle"],
+					"transitions": [
+						{
+							"walk": "query.modified_move_speed > 0.1"
+						},
+						{
+							"run": "query.modified_move_speed > 0.1 && query.has_target"
+						}
+					]
+				},
+				"walk": {
+					"animations": ["walk"],
+					"transitions": [
+						{
+							"idle": "query.modified_move_speed < 0.1"
+						},
+						{
+							"run": "query.modified_move_speed > 0.1 && query.has_target"
+						}
+					]
+				},
+				"run": {
+					"animations": ["run"],
+					"transitions": [
+						{
+							"idle": "query.modified_move_speed < 0.1"
+						},
+						{
+							"walk": "query.modified_move_speed > 0.1 && !query.has_target"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.melee": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"attack": "query.is_delayed_attacking"
+						}
+					]
+				},
+				"attack": {
+					"animations": ["attack"],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					]
+				}
+			}
+		}
+	}
+}

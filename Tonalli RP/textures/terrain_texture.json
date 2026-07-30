@@ -1,0 +1,92 @@
+{
+	"resource_pack_name": "tonalli",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		/* Estuco */
+		"blue_estuco": {
+			"textures": "textures/blocks/estuco_blue.png"
+		},
+		"red_estuco": {
+			"textures": "textures/blocks/estuco_red.png"
+		},
+		"yellow_estuco": {
+			"textures": "textures/blocks/estuco_yellow.png"
+		},
+		"white_estuco": {
+			"textures": "textures/blocks/estuco_white.png"
+		},
+		"veneered_estuco_top": {
+			"textures": "textures/blocks/estuco_veneered_top.png"
+		},
+		"veneered_estuco": {
+			"textures": "textures/blocks/estuco_veneered.png"
+		},
+		"ornamental_veneered_estuco": {
+			"textures": "textures/blocks/estuco_ornamental_veneered.png"
+		},
+
+		/* Volcanic Stone */
+		"broken_volcanic_stone_bricks": {
+			"textures": "textures/blocks/volcanic_broken_stone_bricks.png"
+		},
+		"chiseled_volcanic_stone": {
+			"textures": "textures/blocks/volcanic_chiseled_stone.png"
+		},
+		"mossy_volcanic_stone_bricks": {
+			"textures": "textures/blocks/volcanic_mossy_stone_bricks.png"
+		},
+		"volcanic_stone_bricks": {
+			"textures": "textures/blocks/volcanic_stone_bricks.png"
+		},
+		"polished_volcanic_stone": {
+			"textures": "textures/blocks/volcanic_stone_polished.png"
+		},
+		"volcanic_stone": {
+			"textures": "textures/blocks/volcanic_stone.png"
+		},
+
+		/* Gold */
+		"engraved_gold": {
+			"textures": "textures/blocks/gold_engraved.png"
+		},
+
+		/* Limestone */
+		"limestone": {
+			"textures": "textures/blocks/limestone.png"
+		},
+		"limestone_bricks": {
+			"textures": "textures/blocks/limestone_bricks.png"
+		},
+		"broken_limestone_bricks": {
+			"textures": "textures/blocks/limestone_broken_bricks.png"
+		},
+		"chiseled_limestone": {
+			"textures": "textures/blocks/limestone_chiseled.png"
+		},
+		"mossy_limestone_bricks": {
+			"textures": "textures/blocks/limestone_mossy_bricks.png"
+		},
+		"polished_limestone": {
+			"textures": "textures/blocks/limestone_polished.png"
+		},
+
+		/* Engraved Stone */
+		"engraved_stone_east": {
+			"textures": "textures/blocks/engraved_stone_east.png"
+		},
+		"engraved_stone_north": {
+			"textures": "textures/blocks/engraved_stone_north.png"
+		},
+		"engraved_stone_south": {
+			"textures": "textures/blocks/engraved_stone_south.png"
+		},
+		"to_engraved_stone_top": {
+			"textures": "textures/blocks/engraved_stone_top.png"
+		},
+		"engraved_stone_west": {
+			"textures": "textures/blocks/engraved_stone_west.png"
+		}
+	}
+}

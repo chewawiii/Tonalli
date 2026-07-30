@@ -1,0 +1,34 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "to:jaguar_warrior",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/jaguar_warrior_texture.png"
+			},
+			"geometry": {
+				"default": "geometry.jaguar_warrior"
+			},
+			"render_controllers": ["controller.render.allay"],
+			"animations": {
+				"walk_controller": "controller.animation.run_target",
+				"attack_controller": "controller.animation.melee",
+				"idle": "animation.jaguar_warrior.idle",
+				"walk": "animation.jaguar_warrior.walk",
+				"run": "animation.jaguar_warrior.run",
+				"attack": "animation.jaguar_warrior.attack",
+				"look_at_target": "animation.basic.look_at_target"
+			},
+			"scripts": {
+				"animate": ["walk_controller", "attack_controller", "look_at_target"]
+			},
+			"spawn_egg": {
+				"overlay_color": "#bdd1d1",
+				"base_color": "#9fb3b3"
+			}
+		}
+	}
+}
