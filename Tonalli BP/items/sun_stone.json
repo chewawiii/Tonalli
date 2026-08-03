@@ -2,13 +2,13 @@
 	"format_version": "1.26.30",
 	"minecraft:item": {
 		"description": {
-			"identifier": "to:corn",
+			"identifier": "to:sun_stone",
 			"menu_category": {
-				"category": "nature"
+				"category": "items"
 			}
 		},
 		"components": {
-			"minecraft:icon": "corn"
+			"minecraft:icon": "sun_stone"
 		}
 	}
 }

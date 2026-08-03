@@ -16,6 +16,33 @@
 		},
 		"corn": {
 			"textures": "textures/items/corn.png"
+		},
+		"jade_key": {
+			"textures": "textures/items/jade_key.png"
+		},
+		"mictlan_key": {
+			"textures": "textures/items/mictlan_key.png"
+		},
+		"sun_stone": {
+			"textures": "textures/items/sun_stone.png"
+		},
+		"cempasuchil": {
+			"textures": "textures/blocks/cempasuchil.png"
+		},
+		"ahuizolt_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/ahuizolt_spawn_egg.png"
+		},
+		"jaguar_warrior_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/jaguar_warrior_spawn_egg.png"
+		},
+		"sun_follower_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/sun_follower_spawn_egg.png"
+		},
+		"chile": {
+			"textures": "textures/items/chile.png"
+		},
+		"pozole": {
+			"textures": "textures/items/pozole.png"
 		}
 	}
 }

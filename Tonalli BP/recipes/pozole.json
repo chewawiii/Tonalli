@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "to:pozole"
+		},
+		"tags": ["crafting_table"],
+		"key": {
+			"c": {
+				"item": "to:chile"
+			},
+			"m": {
+				"item": "to:corn"
+			},
+			"p": {
+				"item": "minecraft:porkchop"
+			},
+			"b": {
+				"item": "minecraft:bowl"
+			}
+		},
+		"pattern": [" c ", "mpm", " b "],
+		"result": {
+			"item": "to:pozole",
+			"count": 1
+		}
+	}
+}

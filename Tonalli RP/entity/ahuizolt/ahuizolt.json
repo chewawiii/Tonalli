@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "to:ahuizolt",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/ahuizolt_texture.png"
+			},
+			"geometry": {
+				"default": "geometry.ahuizolt"
+			},
+			"render_controllers": ["controller.render.allay"],
+			"animations": {
+				"walk_controller": "controller.animation.ahuizolt.move",
+				"attack_controller": "controller.animation.ahuizolt.attack",
+				"idle": "animation.ahuizolt.idle",
+				"walk": "animation.ahuizolt.walk",
+				"run": "animation.ahuizolt.run",
+				"attack": "animation.ahuizolt.bite_attack",
+				"tail_attack": "animation.ahuizolt.tail_hand_attack",
+				"roar": "animation.ahuizolt.roar",
+				"spawn": "animation.ahuizolt.spawn",
+				"look_at_target": "animation.ahuizolt.look_at_target"
+			},
+			"scripts": {
+				"animate": ["walk_controller", "attack_controller", "look_at_target"]
+			},
+			"spawn_egg": {
+				"texture": "ahuizolt_spawn_egg"
+			}
+		}
+	}
+}

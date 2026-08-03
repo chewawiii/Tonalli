@@ -1,0 +1,279 @@
+{
+	"format_version": "1.26.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "to:ahuizolt",
+			"spawn_category": "monster",
+			"is_experimental": false,
+			"is_spawnable": true,
+			"is_summonable": true
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": ["tonalli", "monster", "ahuizolt"]
+			},
+			"minecraft:health": {
+				"value": 80,
+				"max": 80
+			},
+			"minecraft:attack": {
+				"damage": 10
+			},
+			"minecraft:collision_box": {
+				"height": 1.31,
+				"width": 0.87
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable_by_entity": {},
+			"minecraft:pushable_by_block": {},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:navigation.walk": {
+				"can_walk": true
+			},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 4,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 6
+			},
+			"minecraft:knockback_resistance": {
+				"value": 0.4
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"cause": "lava",
+						"damage_per_tick": 4,
+						"filters": {
+							"test": "in_lava"
+						}
+					}
+				]
+			},
+			"minecraft:on_target_acquired": {
+				"event": "to:roar_event"
+			},
+			"minecraft:on_target_escape": {
+				"event": "to:remove_skill"
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"target": "self",
+						"filters": {
+							"test": "actor_health",
+							"operator": "<=",
+							"value": 1
+						},
+						"event": "to:death_event"
+					}
+				]
+			}
+		},
+		"component_groups": {
+			"to:spawn_event": {
+				"minecraft:behavior.emerge": {
+					"priority": 0,
+					"duration": 2,
+					"on_done": {
+						"event": "to:remove_spawn_event"
+					}
+				},
+				"minecraft:movement": {
+					"value": 0
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "entity_attack",
+							"deals_damage": "no"
+						},
+						{
+							"cause": "fire",
+							"deals_damage": "no"
+						},
+						{
+							"cause": "projectile",
+							"deals_damage": "no"
+						},
+						{
+							"cause": "lava",
+							"deals_damage": "no"
+						},
+						{
+							"cause": "magic",
+							"deals_damage": "no"
+						},
+						{
+							"cause": "block_explosion",
+							"deals_damage": "no"
+						}
+					]
+				}
+			},
+			"to:movement": {
+				"minecraft:behavior.hurt_by_target": {
+					"priority": 1,
+					"entity_types": [
+						{
+							"filters": {
+								"test": "is_family",
+								"subject": "other",
+								"value": "player"
+							}
+						}
+					]
+				},
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 2,
+					"must_see": true,
+					"entity_types": [
+						{
+							"filters": {
+								"test": "is_family",
+								"subject": "other",
+								"value": "player"
+							},
+							"max_dist": 25
+						}
+					]
+				},
+				"minecraft:movement": {
+					"value": 0.32
+				}
+			},
+			"to:bite_attack": {
+				"minecraft:variant": {
+					"value": 0
+				},
+				"minecraft:behavior.delayed_attack": {
+					"priority": 0,
+					"attack_duration": 1,
+					"hit_delay_pct": 0.7,
+					"reach_multiplier": 2,
+					"require_complete_path": true,
+					"speed_multiplier": 1.3
+				},
+				"minecraft:timer": {
+					"time": 3,
+					"looping": true,
+					"time_down_event": {
+						"event": "to:random_skill"
+					}
+				}
+			},
+			"to:tail_attack": {
+				"minecraft:variant": {
+					"value": 1
+				},
+				"minecraft:behavior.delayed_attack": {
+					"priority": 0,
+					"attack_duration": 1.2,
+					"hit_delay_pct": 0.5,
+					"reach_multiplier": 3,
+					"require_complete_path": false,
+					"speed_multiplier": 1.3
+				},
+				"minecraft:timer": {
+					"time": 3.6,
+					"looping": true,
+					"time_down_event": {
+						"event": "to:random_skill"
+					}
+				}
+			},
+			"to:roar_event": {
+				"minecraft:movement": {
+					"value": 0
+				},
+				"minecraft:variant": {
+					"value": 3
+				},
+				"minecraft:timer": {
+					"time": 1.8,
+					"looping": true,
+					"time_down_event": {
+						"event": "to:remove_roar_event",
+						"target": "self"
+					}
+				}
+			},
+			"to:death_event": {
+				"minecraft:transformation": {
+					"into": "to:ahuizolt_death"
+				}
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": ["to:spawn_event"]
+				}
+			},
+			"to:remove_spawn_event": {
+				"remove": {
+					"component_groups": ["to:spawn_event"]
+				},
+				"add": {
+					"component_groups": ["to:movement"]
+				}
+			},
+			"to:roar_event": {
+				"add": {
+					"component_groups": ["to:roar_event"]
+				},
+				"queue_command": {
+					"command": "effect @e[type=player,r=10] weakness 60 0 true"
+				}
+			},
+			"to:remove_roar_event": {
+				"remove": {
+					"component_groups": ["to:roar_event"]
+				},
+				"add": {
+					"component_groups": ["to:movement", "to:bite_attack"]
+				}
+			},
+			"to:remove_skill": {
+				"remove": {
+					"component_groups": ["to:bite_attack", "to:tail_attack"]
+				}
+			},
+			"to:random_skill": {
+				"sequence": [
+					{
+						"remove": {
+							"component_groups": ["to:bite_attack", "to:tail_attack"]
+						}
+					},
+					{
+						"randomize": [
+							{
+								"weight": 5,
+								"add": {
+									"component_groups": ["to:bite_attack"]
+								}
+							},
+							{
+								"weight": 5,
+								"add": {
+									"component_groups": ["to:tail_attack"]
+								}
+							}
+						]
+					}
+				]
+			},
+			"to:death_event": {
+				"add": {
+					"component_groups": ["to:death_event"]
+				}
+			}
+		}
+	}
+}

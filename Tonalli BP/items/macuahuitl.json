@@ -4,11 +4,12 @@
 		"description": {
 			"identifier": "to:macuahuitl",
 			"menu_category": {
-				"category": "items"
+				"category": "equipment"
 			}
 		},
 		"components": {
 			"minecraft:icon": "macuahuitl",
+			"minecraft:hand_equipped": true,
 			"minecraft:max_stack_size": 1,
 			"minecraft:damage": {
 				"value": 8

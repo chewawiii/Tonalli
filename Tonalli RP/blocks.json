@@ -102,5 +102,8 @@
 	"to:limestone": {
 		"sound": "stone",
 		"textures": "limestone"
+	},
+	"to:cempasuchil": {
+		"sound": "grass"
 	}
 }

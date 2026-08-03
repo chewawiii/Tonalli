@@ -8,6 +8,29 @@
 					"rotation": ["query.target_x_rotation", "query.target_y_rotation", 0.0]
 				}
 			}
+		},
+		"animation.ahuizolt.look_at_target": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": ["query.target_x_rotation", "query.target_y_rotation", 0.0]
+				},
+				"Neck": {
+					"rotation": ["query.target_x_rotation/2", "query.target_y_rotation/2", 0.0]
+				},
+				"line": {
+					"rotation": ["query.target_x_rotation/3", "query.target_y_rotation/3", 0.0]
+				},
+				"bone3": {
+					"rotation": ["query.target_x_rotation/6", "query.target_y_rotation/6", 0.0]
+				},
+				"bone11": {
+					"rotation": ["query.target_x_rotation/7", "query.target_y_rotation/7", 0.0]
+				},
+				"hand": {
+					"rotation": ["query.target_x_rotation/8", "query.target_y_rotation/8", 0.0]
+				}
+			}
 		}
 	}
 }

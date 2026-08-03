@@ -1,0 +1,50 @@
+### BLOCKS ###
+tile.to:blue_estuco.name=Blue Stucco
+tile.to:ornamental_veneered_estuco.name=Ornamental Veneered Stucco
+tile.to:red_estuco.name=Red Stucco
+tile.to:veneered_estuco.name=Veneered Stucco
+tile.to:white_estuco.name=White Stucco
+tile.to:yellow_estuco.name=Yellow Stucco
+
+tile.to:broken_limestone_bricks.name=Broken Limestone Bricks
+tile.to:chiseled_limestone.name=Chiseled Limestone
+tile.to:limestone.name=Limestone
+tile.to:limestone_bricks.name=Limestone Bricks
+tile.to:mossy_limestone_bricks.name=Mossy Limestone Bricks
+tile.to:polished_limestone.name=Polished Limestone
+
+tile.to:broken_volcanic_stone_bricks.name=Broken Volcanic Stone Bricks
+tile.to:chiseled_volcanic_stone.name=Chiseled Volcanic Stone
+tile.to:mossy_volcanic_stone_bricks.name=Mossy Volcanic Stone Bricks
+tile.to:polished_volcanic_stone.name=Polished Volcanic Stone
+tile.to:volcanic_stone.name=Volcanic Stone
+tile.to:volcanic_stone_bricks.name=Volcanic Stone Bricks
+
+tile.to:cempasuchil.name=Cempasuchil
+tile.to:engraved_stone.name=Engraved Stone
+tile.to:engraved_gold.name=Engraved Gold
+
+### ITEMS ###
+
+item.to:ahuitzolt_heart.name=Ahuizotl's Heart
+item.to:corn.name=Corn
+item.to:jade_fragment.name=Jade Fragment
+item.to:jade_heart.name=Jade Heart
+item.to:jade_key.name=Jade Key
+item.to:macuahuitl.name=Macuahuitl
+item.to:mictlan_key.name=Mictlan Key
+item.to:sun_stone.name=Sun Stone
+item.to:chile.name=Chile
+item.to:pozole.name=Pozole
+
+#### ENTITIES ###
+
+entity.to:ahuizolt.name=Ahuizolt
+entity.to:ahuizolt_death.name=Ahuizolt
+item.spawn_egg.entity.to:ahuizolt.name=Ahuizolt Spawn Egg
+
+entity.to:jaguar_warrior.name=Jaguar Warrior
+item.spawn_egg.entity.to:jaguar_warrior.name=Jaguar Warrior Spawn Egg
+
+entity.to:sun_follower.name=Sun Follower
+item.spawn_egg.entity.to:sun_follower.name=Sun Follower Spawn Egg

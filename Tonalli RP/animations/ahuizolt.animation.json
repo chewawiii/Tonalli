@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.ahuizotl.idle": {
+		"animation.ahuizolt.idle": {
 			"loop": true,
 			"animation_length": 3,
 			"bones": {
@@ -615,7 +615,7 @@
 				}
 			}
 		},
-		"animation.ahuizotl.walk": {
+		"animation.ahuizolt.walk": {
 			"loop": true,
 			"animation_length": 1.2,
 			"bones": {
@@ -1433,7 +1433,7 @@
 				}
 			}
 		},
-		"animation.ahuizotl.run": {
+		"animation.ahuizolt.run": {
 			"loop": true,
 			"animation_length": 0.8,
 			"bones": {
@@ -2283,7 +2283,7 @@
 				}
 			}
 		},
-		"animation.ahuizotl.bite_attack": {
+		"animation.ahuizolt.bite_attack": {
 			"animation_length": 1,
 			"bones": {
 				"body": {
@@ -2414,7 +2414,7 @@
 				}
 			}
 		},
-		"animation.ahuizotl.tail_hand_attack": {
+		"animation.ahuizolt.tail_hand_attack": {
 			"animation_length": 1.2,
 			"bones": {
 				"body": {
@@ -2606,7 +2606,7 @@
 				}
 			}
 		},
-		"animation.ahuizotl.roar": {
+		"animation.ahuizolt.roar": {
 			"animation_length": 2,
 			"bones": {
 				"body": {
@@ -2731,7 +2731,7 @@
 				}
 			}
 		},
-		"animation.ahuizotl.spawn": {
+		"animation.ahuizolt.spawn": {
 			"animation_length": 2.5,
 			"bones": {
 				"body": {
@@ -2970,7 +2970,7 @@
 				}
 			}
 		},
-		"animation.ahuizotl.death": {
+		"animation.ahuizolt.death": {
 			"loop": "hold_on_last_frame",
 			"animation_length": 2.5,
 			"bones": {

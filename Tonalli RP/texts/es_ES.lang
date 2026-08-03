@@ -1,0 +1,51 @@
+
+### BLOQUES ###
+tile.to:blue_estuco.name=Estuco Azul
+tile.to:ornamental_veneered_estuco.name=Estuco Chapado Ornamental
+tile.to:red_estuco.name=Estuco Rojo
+tile.to:veneered_estuco.name=Estuco Chapado
+tile.to:white_estuco.name=Estuco Blanco
+tile.to:yellow_estuco.name=Estuco Amarillo
+
+tile.to:broken_limestone_bricks.name=Ladrillos Rotos de Caliza
+tile.to:chiseled_limestone.name=Caliza Cincelada
+tile.to:limestone.name=Caliza
+tile.to:limestone_bricks.name=Ladrillos de Caliza
+tile.to:mossy_limestone_bricks.name=Ladrillos Moscosos de Caliza
+tile.to:polished_limestone.name=Caliza Pulida
+
+tile.to:broken_volcanic_stone_bricks.name=Ladrillos Rotos de Piedra Volcanica
+tile.to:chiseled_volcanic_stone.name=Piedra Volcanica Cincelada
+tile.to:mossy_volcanic_stone_bricks.name=Ladrillos Moscosos de Piedra Volcanica
+tile.to:polished_volcanic_stone.name=Piedra Volcanica Pulida
+tile.to:volcanic_stone.name=Piedra Volcanica
+tile.to:volcanic_stone_bricks.name=Ladrillos de Piedra Volcanica
+
+tile.to:cempasuchil.name=Cempasuchil
+tile.to:engraved_stone.name=Piedra Gravada
+tile.to:engraved_gold.name=Oro Gravado
+
+### ITEMS ###
+
+item.to:ahuitzolt_heart=Corazon de Ahuizolt
+item.to:corn=Maiz
+item.to:jade_fragment=Fragmento de Jade
+item.to:jade_heart=Corazon de Jade
+item.to:jade_key=Llave de Jade
+item.to:macuahuitl=Macuahuitl
+item.to:mictlan_key=Llave de Mictlan
+item.to:sun_stone=Piedra del Sol
+item.to:chile=Chile
+item.to:pozole=Pozole
+
+#### ENTIDADES ###
+
+entity.to:ahuizolt.name=Ahuizolt
+entity.to:ahuizolt_death.name=Ahuizolt
+item.spawn_egg.entity.to:ahuizolt.name=Spawn Ahuizolt
+
+entity.to:jaguar_warrior.name=Guerrero Jaguar
+item.spawn_egg.entity.to:jaguar_warrior.name=Spawn Guerrero Jaguar
+
+entity.to:sun_follower.name=Seguidor del Sol
+item.spawn_egg.entity.to:sun_follower.name=Spawn Seguidor del Sol

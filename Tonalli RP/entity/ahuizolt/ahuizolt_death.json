@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "to:ahuizolt_death",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/ahuizolt_texture.png"
+			},
+			"geometry": {
+				"default": "geometry.ahuizolt"
+			},
+			"render_controllers": ["controller.render.allay"],
+			"animations": {
+				"death": "animation.ahuizolt.death",
+				"death_controller": "controller.animation.ahuizolt.death"
+			},
+			"scripts": {
+				"animate": ["death_controller"]
+			}
+		}
+	}
+}

@@ -31,8 +31,7 @@
 				"animate": ["walk_controller", "attack_controller", "look_at_target"]
 			},
 			"spawn_egg": {
-				"overlay_color": "#92b472",
-				"base_color": "#9fb3b3"
+				"texture": "sun_follower_spawn_egg"
 			}
 		}
 	}

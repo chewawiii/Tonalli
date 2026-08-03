@@ -2,13 +2,13 @@
 	"format_version": "1.26.30",
 	"minecraft:item": {
 		"description": {
-			"identifier": "to:corn",
+			"identifier": "to:jade_key",
 			"menu_category": {
-				"category": "nature"
+				"category": "items"
 			}
 		},
 		"components": {
-			"minecraft:icon": "corn"
+			"minecraft:icon": "jade_key"
 		}
 	}
 }

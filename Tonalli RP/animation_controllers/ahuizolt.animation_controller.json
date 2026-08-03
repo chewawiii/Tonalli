@@ -1,0 +1,102 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.ahuizolt.attack": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"roar": "query.variant == 3"
+						},
+						{
+							"attack": "query.is_delayed_attacking && query.variant == 0"
+						},
+						{
+							"tail_attack": "query.is_delayed_attacking && query.variant == 1"
+						}
+					]
+				},
+				"roar": {
+					"animations": ["roar"],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					]
+				},
+				"attack": {
+					"animations": ["attack"],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					]
+				},
+				"tail_attack": {
+					"animations": ["tail_attack"],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.ahuizolt.move": {
+			"states": {
+				"default": {
+					"animations": ["idle"],
+					"transitions": [
+						{
+							"emerging": "query.is_emerging"
+						},
+						{
+							"run": "query.modified_move_speed > 0.1 && query.has_target"
+						},
+						{
+							"walk": "query.modified_move_speed > 0.1"
+						}
+					]
+				},
+				"emerging": {
+					"animations": ["spawn"],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					]
+				},
+				"walk": {
+					"animations": ["walk"],
+					"transitions": [
+						{
+							"default": "query.modified_move_speed < 0.1"
+						},
+						{
+							"run": "query.modified_move_speed > 0.1 && query.has_target"
+						}
+					]
+				},
+				"run": {
+					"animations": ["run"],
+					"transitions": [
+						{
+							"default": "query.modified_move_speed < 0.1"
+						},
+						{
+							"walk": "query.modified_move_speed > 0.1 && !query.has_target"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.ahuizolt.death": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": ["death"]
+				}
+			}
+		}
+	}
+}

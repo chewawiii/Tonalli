@@ -1,0 +1,55 @@
+{
+	"format_version": "1.26.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "to:cempasuchil",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:geometry": "minecraft:geometry.cross",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cempasuchil",
+					"render_method": "alpha_test_single_sided"
+				}
+			},
+			"minecraft:collision_box": false,
+			"minecraft:selection_box": {
+				"origin": [-5, 0, -5],
+				"size": [10, 10, 10]
+			},
+			"minecraft:destruction_particles": {
+				"particle_count": 48
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": ["up"],
+						"block_filter": ["minecraft:grass_block"]
+					}
+				]
+			},
+			"minecraft:precipitation_interactions": {
+				"precipitation_behavior": "none"
+			},
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"liquid_type": "water",
+						"on_liquid_touches": "popped"
+					}
+				]
+			},
+			"minecraft:movable": {
+				"movement_type": "popped"
+			},
+			"minecraft:connection_rule": {
+				"accepts_connections_from": "none"
+			},
+			"minecraft:map_color": "#D76619",
+			"minecraft:destructible_by_mining": { "seconds_to_destroy": 0.01 }
+		}
+	}
+}

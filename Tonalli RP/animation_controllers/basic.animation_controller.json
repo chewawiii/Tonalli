@@ -29,10 +29,10 @@
 					"animations": ["idle"],
 					"transitions": [
 						{
-							"walk": "query.modified_move_speed > 0.1"
+							"run": "query.modified_move_speed > 0.1 && query.has_target"
 						},
 						{
-							"run": "query.modified_move_speed > 0.1 && query.has_target"
+							"walk": "query.modified_move_speed > 0.1"
 						}
 					]
 				},

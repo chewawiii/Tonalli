@@ -2,13 +2,13 @@
 	"format_version": "1.26.30",
 	"minecraft:item": {
 		"description": {
-			"identifier": "to:corn",
+			"identifier": "to:chile",
 			"menu_category": {
 				"category": "nature"
 			}
 		},
 		"components": {
-			"minecraft:icon": "corn"
+			"minecraft:icon": "chile"
 		}
 	}
 }
