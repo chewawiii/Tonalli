@@ -5,19 +5,19 @@
 			"arrays": {
 				"textures": {
 					"Array.skins": [
-						"texture.variant0",
-						"texture.variant1",
-						"texture.variant2",
-						"texture.variant3",
-						"texture.variant4",
-						"texture.variant5"
+						"Texture.variant0",
+						"Texture.variant1",
+						"Texture.variant2",
+						"Texture.variant3",
+						"Texture.variant4",
+						"Texture.variant5"
 					]
 				}
 			},
-			"geometry": "geometry.default",
+			"geometry": "Geometry.default",
 			"materials": [
 				{
-					"*": "material.default"
+					"*": "Material.default"
 				}
 			],
 			"textures": ["Array.skins[query.variant]"]

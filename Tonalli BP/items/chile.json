@@ -8,7 +8,19 @@
 			}
 		},
 		"components": {
-			"minecraft:icon": "chile"
+			"minecraft:icon": "chile",
+			"minecraft:food": {
+				"nutrition": 1,
+				"saturation_modifier": 0.6
+			},
+			"minecraft:use_animation": "eat",
+			"minecraft:use_modifiers": {
+				"use_duration": 1.6,
+				"movement_modifier": 0.1
+			},
+			"minecraft:tags": {
+				"tags": ["minecraft:is_food"]
+			}
 		}
 	}
 }

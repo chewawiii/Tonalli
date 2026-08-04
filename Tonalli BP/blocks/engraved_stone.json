@@ -5,9 +5,24 @@
 			"identifier": "to:engraved_stone",
 			"menu_category": {
 				"category": "construction"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": ["minecraft:cardinal_direction"],
+					"y_rotation_offset": 90
+				}
 			}
 		},
 		"components": {
+			"minecraft:geometry": "minecraft:geometry.full_block",
+			"minecraft:material_instances": {
+				"north": { "texture": "engraved_stone_north" },
+				"east": { "texture": "engraved_stone_east" },
+				"west": { "texture": "engraved_stone_west" },
+				"south": { "texture": "engraved_stone_south" },
+				"up": { "texture": "to_engraved_stone_top" },
+				"down": { "texture": "to_engraved_stone_top" }
+			},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 1.5,
 				"item_specific_speeds": [
@@ -41,6 +56,40 @@
 				"explosion_resistance": 30
 			},
 			"minecraft:map_color": "#6A6D6A"
-		}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 270, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 0, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 90, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 180, 0]
+					}
+				}
+			}
+		]
 	}
 }

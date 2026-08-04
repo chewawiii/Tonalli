@@ -43,6 +43,12 @@
 		},
 		"pozole": {
 			"textures": "textures/items/pozole.png"
+		},
+		"obsidian_fragment": {
+			"textures": "textures/items/obsidian_fragment.png"
+		},
+		"obsidian_spear": {
+			"textures": "textures/items/obsidian_spear.png"
 		}
 	}
 }

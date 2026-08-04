@@ -9,7 +9,24 @@
 		},
 		"components": {
 			"minecraft:icon": "pozole",
-			"minecraft:max_stack_size": 1
+			"minecraft:max_stack_size": 1,
+			"minecraft:food": {
+				"nutrition": 6,
+				"saturation_modifier": 1.2
+			},
+			"minecraft:use_animation": "eat",
+			"minecraft:use_modifiers": {
+				"use_duration": 1.6,
+				"movement_modifier": 0.1
+			},
+			"minecraft:tags": {
+				"tags": ["minecraft:is_food"]
+			},
+			"to:pozole_effect": {
+				"name": "strength",
+				"duration": 200,
+				"amplifier": 0
+			}
 		}
 	}
 }

@@ -15,6 +15,15 @@
 			"minecraft:type_family": {
 				"family": ["tonalli", "monster", "sun_follower"]
 			},
+			"minecraft:equipment": {
+				"table": "loot_tables/equipment/sun_follower.json",
+				"slot_drop_chance": [
+					{
+						"slot": "slot.weapon.mainhand",
+						"drop_chance": 0.05
+					}
+				]
+			},
 			"minecraft:health": {
 				"value": 25,
 				"max": 25
@@ -44,7 +53,7 @@
 				"priority": 0,
 				"attack_duration": 1,
 				"hit_delay_pct": 0.5,
-				"reach_multiplier": 1.5,
+				"reach_multiplier": 4,
 				"speed_multiplier": 1.5
 			},
 			"minecraft:behavior.hurt_by_target": {

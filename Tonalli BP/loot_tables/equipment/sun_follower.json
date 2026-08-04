@@ -1,0 +1,24 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"weight": 8,
+					"type": "item",
+					"name": "minecraft:golden_sword"
+				},
+				{
+					"weight": 2,
+					"type": "item",
+					"name": "minecraft:golden_sword",
+					"functions": [
+						{
+							"function": "enchant_randomly"
+						}
+					]
+				}
+			]
+		}
+	]
+}

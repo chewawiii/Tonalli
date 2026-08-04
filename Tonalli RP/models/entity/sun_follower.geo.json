@@ -20,8 +20,8 @@
 					"parent": "All",
 					"pivot": [0, 24, 0],
 					"cubes": [
-						{ "origin": [-4, 24, -4], "size": [8, 8, 8], "uv": [0, 16] },
-						{ "origin": [-9, 27, 0], "size": [18, 16, 0], "uv": [0, 0] }
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "uv": [0, 16]},
+						{"origin": [-9, 27, 0], "size": [18, 16, 0], "uv": [0, 0]}
 					]
 				},
 				{
@@ -29,8 +29,8 @@
 					"parent": "All",
 					"pivot": [0, 12, 0],
 					"cubes": [
-						{ "origin": [-4, 12, -2], "size": [8, 12, 4], "uv": [0, 32] },
-						{ "origin": [-4.1, 5, -2.1], "size": [8.2, 10, 4.2], "uv": [32, 16] }
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "uv": [0, 32]},
+						{"origin": [-4.1, 5, -2.1], "size": [8.2, 10, 4.2], "uv": [32, 16]}
 					]
 				},
 				{
@@ -38,30 +38,57 @@
 					"parent": "All",
 					"pivot": [-5, 22, 0],
 					"cubes": [
-						{ "origin": [-6, 12, -1], "size": [2, 12, 2], "uv": [32, 30] },
-						{ "origin": [-7, 20.1, -2], "size": [3, 4, 4], "uv": [44, 0] }
+						{"origin": [-6, 12, -1], "size": [2, 12, 2], "uv": [32, 30]},
+						{"origin": [-7, 20.1, -2], "size": [3, 4, 4], "uv": [44, 0]}
 					]
+				},
+				{
+					"name": "rightArm",
+					"parent": "Righthand",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightItem",
+					"parent": "rightArm",
+					"pivot": [-5, 15, 0],
+					"locators": {
+						"held_item": [-5, 13, 0]
+					}
 				},
 				{
 					"name": "Lefthand",
 					"parent": "All",
 					"pivot": [5, 22, 0],
 					"cubes": [
-						{ "origin": [4, 12, -1], "size": [2, 12, 2], "uv": [24, 32] },
-						{ "origin": [4, 20.1, -2], "size": [3, 4, 4], "uv": [44, 8] }
+						{"origin": [4, 12, -1], "size": [2, 12, 2], "uv": [24, 32]},
+						{"origin": [4, 20.1, -2], "size": [3, 4, 4], "uv": [44, 8]}
 					]
+				},
+				{
+					"name": "leftArm",
+					"parent": "Lefthand",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftItem",
+					"parent": "Lefthand",
+					"pivot": [5.5, 20, 0]
 				},
 				{
 					"name": "Rightleg",
 					"parent": "All",
 					"pivot": [-2, 12, 0],
-					"cubes": [{ "origin": [-3, 0.1, -1], "size": [2, 12, 2], "uv": [40, 30] }]
+					"cubes": [
+						{"origin": [-3, 0.1, -1], "size": [2, 12, 2], "uv": [40, 30]}
+					]
 				},
 				{
 					"name": "Leftleg",
 					"parent": "All",
 					"pivot": [2, 12, 0],
-					"cubes": [{ "origin": [1, 0.1, -1], "size": [2, 12, 2], "uv": [36, 0] }]
+					"cubes": [
+						{"origin": [1, 0.1, -1], "size": [2, 12, 2], "uv": [36, 0]}
+					]
 				}
 			]
 		}

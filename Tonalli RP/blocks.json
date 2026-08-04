@@ -68,15 +68,15 @@
 	},
 
 	"to:engraved_stone": {
-		"sound": "stone",
-		"textures": {
+		"sound": "stone"
+		/*"textures": {
 			"down": "to_engraved_stone_top",
 			"east": "engraved_stone_east",
 			"north": "engraved_stone_north",
 			"south": "engraved_stone_south",
 			"up": "to_engraved_stone_top",
 			"west": "engraved_stone_west"
-		}
+		}*/
 	},
 
 	"to:limestone_bricks": {

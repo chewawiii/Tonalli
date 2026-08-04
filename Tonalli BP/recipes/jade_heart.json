@@ -1,0 +1,22 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "to:jade_heart"
+		},
+		"tags": ["crafting_table"],
+		"key": {
+			"h": {
+				"item": "to:ahuitzolt_heart"
+			},
+			"j": {
+				"item": "to:jade_fragment"
+			}
+		},
+		"pattern": ["jjj", "jhj", "jjj"],
+		"result": {
+			"item": "to:jade_heart",
+			"count": 1
+		}
+	}
+}

@@ -20,6 +20,13 @@
 					"max": 1
 				},
 				"max_durability": 251
+			},
+			"minecraft:enchantable": {
+				"slot": "sword",
+				"value": 10
+			},
+			"minecraft:tags": {
+				"tags": ["minecraft:is_sword"]
 			}
 		}
 	}

@@ -18,6 +18,7 @@
 				"default": "geometry.sun_follower"
 			},
 			"render_controllers": ["controller.render.sun_follower"],
+			"enable_attachables": true,
 			"animations": {
 				"walk_controller": "controller.animation.run_target",
 				"attack_controller": "controller.animation.melee",

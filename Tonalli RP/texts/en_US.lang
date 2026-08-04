@@ -36,6 +36,8 @@ item.to:mictlan_key.name=Mictlan Key
 item.to:sun_stone.name=Sun Stone
 item.to:chile.name=Chile
 item.to:pozole.name=Pozole
+item.to:obsidian_fragment=Obsidian Fragment
+item.to:obsidian_spear=Obsidian Spear
 
 #### ENTITIES ###
 
