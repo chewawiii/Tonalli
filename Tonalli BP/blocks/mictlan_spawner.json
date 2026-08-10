@@ -1,0 +1,93 @@
+{
+	"format_version": "1.26.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "to:mictlan_spawner",
+			"menu_category": {
+				"category": "nature"
+			},
+			"states": {
+				"to:state": ["none", "idle", "active", "ejected", "cooldown"],
+				"to:is_ominouse": [false, true]
+			}
+		},
+		"components": {
+			"to:mictlan_spawner": {},
+			"minecraft:geometry": "minecraft:geometry.full_block",
+			"minecraft:material_instances": {
+				"*": { "texture": "mictlan_spawner_side_off", "render_method": "alpha_test" },
+				"up": { "texture": "mictlan_spawner_top_off", "render_method": "alpha_test" },
+				"down": { "texture": "mictlan_spawner_bottom", "render_method": "alpha_test" }
+			},
+			"minecraft:destructible_by_mining": false,
+			"minecraft:destructible_by_explosion": false,
+			"minecraft:movable": {
+				"movement_type": "immovable"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('to:state') != 'none'",
+				"components": {
+					"minecraft:tick": {
+						"interval_range": [20, 20],
+						"looping": true
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('to:state') == 'cooldown'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": { "texture": "mictlan_spawner_side_off", "render_method": "alpha_test" },
+						"up": { "texture": "mictlan_spawner_top_off", "render_method": "alpha_test" },
+						"down": { "texture": "mictlan_spawner_bottom", "render_method": "alpha_test" }
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('to:is_ominouse') && (query.block_state('to:state') == 'idle' || query.block_state('to:state') == 'active')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": { "texture": "mictlan_spawner_side_ominouse", "render_method": "alpha_test" },
+						"up": { "texture": "mictlan_spawner_top_ominouse", "render_method": "alpha_test" },
+						"down": { "texture": "mictlan_spawner_bottom", "render_method": "alpha_test" }
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('to:is_ominouse') && query.block_state('to:state') == 'ejected'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": { "texture": "mictlan_spawner_side_ominouse", "render_method": "alpha_test" },
+						"up": {
+							"texture": "mictlan_spawner_top_ejected_ominouse",
+							"render_method": "alpha_test"
+						},
+						"down": { "texture": "mictlan_spawner_bottom", "render_method": "alpha_test" }
+					}
+				}
+			},
+			{
+				"condition": "!query.block_state('to:is_ominouse') && (query.block_state('to:state') == 'idle' || query.block_state('to:state') == 'active')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": { "texture": "mictlan_spawner_side_on", "render_method": "alpha_test" },
+						"up": { "texture": "mictlan_spawner_top_on", "render_method": "alpha_test" },
+						"down": { "texture": "mictlan_spawner_bottom", "render_method": "alpha_test" }
+					}
+				}
+			},
+			{
+				"condition": "!query.block_state('to:is_ominouse') && query.block_state('to:state') == 'ejected'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": { "texture": "mictlan_spawner_side_on", "render_method": "alpha_test" },
+						"up": { "texture": "mictlan_spawner_top_ejected", "render_method": "alpha_test" },
+						"down": { "texture": "mictlan_spawner_bottom", "render_method": "alpha_test" }
+					}
+				}
+			}
+		]
+	}
+}

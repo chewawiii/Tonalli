@@ -105,5 +105,9 @@
 	},
 	"to:cempasuchil": {
 		"sound": "grass"
+	},
+	"to:jade_block": {
+		"sound": "metal",
+		"textures": "jade_block"
 	}
 }

@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "to:obsidian_spear",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/items/obsidian_spear_MODEL", //use long texture
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.spear" //vanilla spear model
+			},
+			"animations": {
+				"held_first_person": "animation.spear.held_first_person", //vanilla animations for spear
+				"held_third_person": "animation.spear.held_third_person",
+				"hit": "animation.spear.hit",
+				"control_held": "controller.animation.spear.held",
+				"control_hit": "controller.animation.spear.hit"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"held_first_person": "c.is_first_person" // pulled from spear animation controllers
+					},
+					{
+						"held_third_person": "!c.is_first_person" // pulled from spear animation controllers
+					},
+					{
+						"hit": "c.owning_entity->query.ticks_since_last_kinetic_weapon_hit >= 0.0 && c.owning_entity->query.ticks_since_last_kinetic_weapon_hit <= 5.0" // pulled from spear animation controllers
+					}
+				]
+			},
+			"render_controllers": ["controller.render.item_default"]
+		}
+	}
+}

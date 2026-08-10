@@ -2,20 +2,20 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "to:ahuizolt_death",
+			"identifier": "to:ahuizotl_death",
 			"materials": {
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/ahuizolt_texture.png"
+				"default": "textures/entity/ahuizotl_texture.png"
 			},
 			"geometry": {
-				"default": "geometry.ahuizolt"
+				"default": "geometry.ahuizotl"
 			},
 			"render_controllers": ["controller.render.allay"],
 			"animations": {
-				"death": "animation.ahuizolt.death",
-				"death_controller": "controller.animation.ahuizolt.death"
+				"death": "animation.ahuizotl.death",
+				"death_controller": "controller.animation.ahuizotl.death"
 			},
 			"scripts": {
 				"animate": ["death_controller"]

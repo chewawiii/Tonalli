@@ -24,6 +24,13 @@ tile.to:cempasuchil.name=Cempasuchil
 tile.to:engraved_stone.name=Engraved Stone
 tile.to:engraved_gold.name=Engraved Gold
 
+tile.to:protection_altar.name=Protection Altar
+tile.to:ahuizotl_altar.name=Ahuizotl Altar
+
+tile.to:mictlan_spawner.name=Mictlan Spawner
+tile.to:mictlan_vault.name=Mictlan Vault
+tile.to:mictlan_vault_ominous.name=Mictlan Vault Ominous
+
 ### ITEMS ###
 
 item.to:ahuitzolt_heart.name=Ahuizotl's Heart
@@ -38,6 +45,7 @@ item.to:chile.name=Chile
 item.to:pozole.name=Pozole
 item.to:obsidian_fragment=Obsidian Fragment
 item.to:obsidian_spear=Obsidian Spear
+item.to:tlaloc_jewel=Tlaloc Jewel
 
 #### ENTITIES ###
 
@@ -50,3 +58,6 @@ item.spawn_egg.entity.to:jaguar_warrior.name=Jaguar Warrior Spawn Egg
 
 entity.to:sun_follower.name=Sun Follower
 item.spawn_egg.entity.to:sun_follower.name=Sun Follower Spawn Egg
+
+entity.to:tezcatlipoca_follower.name=Tezcatlipoca Follower
+item.spawn_egg.entity.to:tezcatlipoca_follower.name=Tezcatlipoca Follower Spawn Egg

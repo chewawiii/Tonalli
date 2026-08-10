@@ -2,17 +2,17 @@
 	"format_version": "1.26.30",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "to:ahuizolt_death",
+			"identifier": "to:ahuizotl_death",
 			"is_experimental": false,
 			"is_spawnable": false,
 			"is_summonable": true
 		},
 		"components": {
 			"minecraft:loot": {
-				"table": "loot_tables/entities/ahuizolt.json"
+				"table": "loot_tables/entities/ahuizotl.json"
 			},
 			"minecraft:type_family": {
-				"family": ["tonalli", "monster", "ahuizolt"]
+				"family": ["tonalli", "monster", "ahuizotl"]
 			},
 			"minecraft:health": {
 				"value": 1,

@@ -1,0 +1,22 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "to:obsidian_spear"
+		},
+		"tags": ["crafting_table"],
+		"key": {
+			"o": {
+				"item": "to:obsidian_fragment"
+			},
+			"s": {
+				"item": "minecraft:stick"
+			}
+		},
+		"pattern": ["  o", " s ", "s  "],
+		"result": {
+			"item": "to:obsidian_spear",
+			"count": 1
+		}
+	}
+}

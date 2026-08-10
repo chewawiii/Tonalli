@@ -5,7 +5,7 @@
 		"description": "Tonalli Addon",
 		"min_engine_version": [1, 26, 30],
 		"uuid": "50e028bc-8d91-4576-9cc0-def56ac5cded",
-		"version": [1, 0, 0]
+		"version": "1.1.1-beta"
 	},
 	"modules": [
 		{
@@ -17,7 +17,7 @@
 	"dependencies": [
 		{
 			"uuid": "da97c991-f1d7-40a7-b753-27558849139b",
-			"version": [1, 0, 0]
+			"version": "1.1.1-beta"
 		}
 	],
 	"metadata": {

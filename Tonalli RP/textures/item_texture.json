@@ -29,14 +29,17 @@
 		"cempasuchil": {
 			"textures": "textures/blocks/cempasuchil.png"
 		},
-		"ahuizolt_spawn_egg": {
-			"textures": "textures/items/spawn_eggs/ahuizolt_spawn_egg.png"
+		"ahuizotl_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/ahuizotl_spawn_egg.png"
 		},
 		"jaguar_warrior_spawn_egg": {
 			"textures": "textures/items/spawn_eggs/jaguar_warrior_spawn_egg.png"
 		},
 		"sun_follower_spawn_egg": {
 			"textures": "textures/items/spawn_eggs/sun_follower_spawn_egg.png"
+		},
+		"tezcatlipoca_follower_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/tezcatlipoca_follower_spawn_egg.png"
 		},
 		"chile": {
 			"textures": "textures/items/chile.png"
@@ -49,6 +52,9 @@
 		},
 		"obsidian_spear": {
 			"textures": "textures/items/obsidian_spear.png"
+		},
+		"tlaloc_jewel": {
+			"textures": "textures/items/tlaloc_jewel.png"
 		}
 	}
 }

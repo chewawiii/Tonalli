@@ -91,6 +91,93 @@
 
 		"cempasuchil": {
 			"textures": "textures/blocks/cempasuchil.png"
+		},
+		"protection_altar": {
+			"textures": "textures/blocks/protection_altar_texture.png"
+		},
+		"jade_block": {
+			"textures": "textures/blocks/jade_block.png"
+		},
+		"ahuizotl_altar": {
+			"textures": "textures/blocks/ahuizotl_altar/ahuizotl_altar_texture.png"
+		},
+		"active_ahuizotl_altar": {
+			"textures": "textures/blocks/ahuizotl_altar/active_ahuizotl_altar_texture.png"
+		},
+
+		/* Mictlan Spawner */
+		"mictlan_spawner_bottom": {
+			"textures": "textures/blocks/mictlan_spawner/mictlan_spawner_bottom.png"
+		},
+		"mictlan_spawner_side_off": {
+			"textures": "textures/blocks/mictlan_spawner/mictlan_spawner_sid_off.png"
+		},
+		"mictlan_spawner_side_on": {
+			"textures": "textures/blocks/mictlan_spawner/mictlan_spawner_sid_on.png"
+		},
+		"mictlan_spawner_side_ominouse": {
+			"textures": "textures/blocks/mictlan_spawner/mictlan_spawner_sid_ominouse.png"
+		},
+		"mictlan_spawner_top_off": {
+			"textures": "textures/blocks/mictlan_spawner/mictlan_spawner_top_off.png"
+		},
+		"mictlan_spawner_top_on": {
+			"textures": "textures/blocks/mictlan_spawner/mictlan_spawner_top_on.png"
+		},
+		"mictlan_spawner_top_ominouse": {
+			"textures": "textures/blocks/mictlan_spawner/mictlan_spawner_top_ominouse.png"
+		},
+		"mictlan_spawner_top_ejected": {
+			"textures": "textures/blocks/mictlan_spawner/mictlan_spawner_top_ejected_reward.png"
+		},
+		"mictlan_spawner_top_ejected_ominouse": {
+			"textures": "textures/blocks/mictlan_spawner/mictlan_spawner_top_ejected_reward_ominouse.png"
+		},
+
+		/* Mictlan Vault */
+		"mictlan_vault_bottom": {
+			"textures": "textures/blocks/mictlan_vault/mictlan_vault_botton.png"
+		},
+		"mictlan_vault_front_off": {
+			"textures": "textures/blocks/mictlan_vault/mictlan_vault_front_off.png"
+		},
+		"mictlan_vault_front_on": {
+			"textures": "textures/blocks/mictlan_vault/mictlan_vault_fron_on.png"
+		},
+		"mictlan_vault_front_ejected": {
+			"textures": "textures/blocks/mictlan_vault/mictlan_vault_front_on_ejected_reward.png"
+		},
+		"mictlan_vault_side_off": {
+			"textures": "textures/blocks/mictlan_vault/mictlan_vault_side_off.png"
+		},
+		"mictlan_vault_side_on": {
+			"textures": "textures/blocks/mictlan_vault/mictlan_vault_side_on.png"
+		},
+		"mictlan_vault_top": {
+			"textures": "textures/blocks/mictlan_vault/mictlan_vault_top.png"
+		},
+
+		/* Mictlan Vault Ominous */
+		"mictlan_vault_front_off_ominous": {
+			"textures": "textures/blocks/mictlan_vault/mictlan_vault_fron_off_ominouse.png"
+		},
+		"mictlan_vault_front_on_ominous": {
+			"textures": "textures/blocks/mictlan_vault/mictlan_vault_front_on_ominause.png"
+		},
+		"mictlan_vault_front_ejected_ominous": {
+			"textures": "textures/blocks/mictlan_vault/mictlan_vault_front_on_ejected_reward_ominouse.png"
+		},
+		"mictlan_vault_side_off_ominous": {
+			"textures": "textures/blocks/mictlan_vault/mictlan_vault_side_off_ominause.png"
+		},
+		"mictlan_vault_side_on_ominous": {
+			"textures": "textures/blocks/mictlan_vault/mictlan_vault_side_on_ominause.png"
+		},
+		"mictlan_vault_top_ominous": {
+			"textures": "textures/blocks/mictlan_vault/mictlan_vault_top_ominause.png"
+		},
+		"mictlan_vault_top_ejected_ominous": {
+			"textures": "textures/blocks/mictlan_vault/mictlan_vault_top_ejected_reward_ominouse.png"
 		}
 	}
 }

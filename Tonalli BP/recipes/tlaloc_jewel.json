@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "to:tlaloc_jewel"
+		},
+		"tags": ["crafting_table"],
+		"key": {
+			"g": {
+				"item": "minecraft:gold_nugget"
+			},
+			"j": {
+				"item": "to:jade_fragment"
+			},
+			"h": {
+				"item": "minecraft:heart_of_the_sea"
+			}
+		},
+		"pattern": ["ggg", "ghg", "jjj"],
+		"result": {
+			"item": "to:tlaloc_jewel",
+			"count": 1
+		}
+	}
+}

@@ -1,0 +1,91 @@
+{
+	"format_version": "1.26.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "to:protection_altar",
+			"menu_category": {
+				"category": "construction"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": ["minecraft:cardinal_direction"],
+					"y_rotation_offset": 90
+				}
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.protection_altar",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "protection_altar",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1.5,
+				"item_specific_speeds": [
+					{
+						"item": { "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:wooden_tier')" },
+						"destroy_speed": 1.15
+					},
+					{
+						"item": { "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:stone_tier')" },
+						"destroy_speed": 0.6
+					},
+					{
+						"item": { "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier')" },
+						"destroy_speed": 0.4
+					},
+					{
+						"item": { "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:golden_tier')" },
+						"destroy_speed": 0.2
+					},
+					{
+						"item": { "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:diamond_tier')" },
+						"destroy_speed": 0.3
+					},
+					{
+						"item": { "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:netherite_tier')" },
+						"destroy_speed": 0.25
+					}
+				]
+			},
+			"minecraft:destructible_by_explosion": false,
+			"minecraft:map_color": "#6A6D6A"
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 90, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 180, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 270, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 0, 0]
+					}
+				}
+			}
+		]
+	}
+}

@@ -25,6 +25,13 @@ tile.to:cempasuchil.name=Cempasuchil
 tile.to:engraved_stone.name=Piedra Gravada
 tile.to:engraved_gold.name=Oro Gravado
 
+tile.to:protection_altar.name=Altar de Proteccion
+tile.to:ahuizotl_altar.name=Altar de Ahuizotl
+
+tile.to:mictlan_spawner.name=Generador de Mictlan
+tile.to:mictlan_vault.name=Boveda de Mictlan
+tile.to:mictlan_vault_ominous.name=Boveda de Mictlan Ominosa
+
 ### ITEMS ###
 
 item.to:ahuitzolt_heart=Corazon de Ahuizolt
@@ -39,6 +46,7 @@ item.to:chile=Chile
 item.to:pozole=Pozole
 item.to:obsidian_fragment=Fragmento de obsidiana
 item.to:obsidian_spear=Lanza de obsidiana
+item.to:tlaloc_jewel=Joya de Tlaloc
 
 #### ENTIDADES ###
 
@@ -51,3 +59,6 @@ item.spawn_egg.entity.to:jaguar_warrior.name=Huevo generador de Guerrero Jaguar
 
 entity.to:sun_follower.name=Seguidor del Sol
 item.spawn_egg.entity.to:sun_follower.name=Huevo generador de Seguidor del Sol
+
+entity.to:tezcatlipoca_follower.name=Seguidor de Tezcatlipoca
+item.spawn_egg.entity.to:tezcatlipoca_follower.name=Huevo generador de Seguidor de Tezcatlipoca

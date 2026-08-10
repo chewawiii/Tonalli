@@ -1,0 +1,101 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.protection_altar",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "altar",
+					"pivot": [0, 0, 0],
+					"cubes": [{ "origin": [-8, 0, -8], "size": [16, 12, 16], "uv": [0, 0] }]
+				},
+				{
+					"name": "libro",
+					"parent": "altar",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-3, 12, -1],
+							"size": [8, 8, 8],
+							"pivot": [0, 12, -1],
+							"rotation": [0, -45, 0],
+							"uv": [0, 28]
+						}
+					]
+				},
+				{
+					"name": "velas",
+					"parent": "altar",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "vela1",
+					"parent": "velas",
+					"pivot": [3, 12, 7],
+					"cubes": [
+						{ "origin": [2.5, 15, 7], "size": [1, 1, 0], "uv": [28, 44] },
+						{ "origin": [2, 12, 6], "size": [2, 3, 2], "uv": [32, 42] },
+						{ "origin": [3, 15, 6.5], "size": [0, 1, 1], "uv": [16, 44] }
+					]
+				},
+				{
+					"name": "vela5",
+					"parent": "velas",
+					"pivot": [-2, 12, -6],
+					"cubes": [
+						{ "origin": [-2.5, 15, -6], "size": [1, 1, 0], "uv": [44, 28] },
+						{ "origin": [-3, 12, -7], "size": [2, 3, 2], "uv": [40, 42] },
+						{ "origin": [-2, 15, -6.5], "size": [0, 1, 1], "uv": [18, 44] }
+					]
+				},
+				{
+					"name": "vela2",
+					"parent": "velas",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{ "origin": [4, 12, 1], "size": [2, 3, 2], "uv": [0, 44] },
+						{ "origin": [4.5, 15, 2], "size": [1, 1, 0], "uv": [44, 29] },
+						{ "origin": [5, 15, 1.5], "size": [0, 1, 1], "uv": [20, 44] }
+					]
+				},
+				{
+					"name": "vela4",
+					"parent": "velas",
+					"pivot": [-12, 0, -9],
+					"cubes": [
+						{ "origin": [-8, 12, -8], "size": [2, 3, 2], "uv": [8, 44] },
+						{ "origin": [-7.5, 15, -7], "size": [1, 1, 0], "uv": [30, 44] },
+						{ "origin": [-7, 15, -7.5], "size": [0, 1, 1], "uv": [22, 44] }
+					]
+				},
+				{
+					"name": "vela3",
+					"parent": "velas",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{ "origin": [6.5, 16, 5], "size": [0, 1, 1], "uv": [24, 44] },
+						{ "origin": [6, 16, 5.5], "size": [1, 1, 0], "uv": [44, 30] },
+						{ "origin": [5, 12, 4], "size": [3, 4, 3], "uv": [32, 28] }
+					]
+				},
+				{
+					"name": "vela6",
+					"parent": "velas",
+					"pivot": [-12, 0, -9],
+					"cubes": [
+						{ "origin": [-5.5, 16, -4], "size": [0, 1, 1], "uv": [26, 44] },
+						{ "origin": [-6, 16, -3.5], "size": [1, 1, 0], "uv": [44, 31] },
+						{ "origin": [-7, 12, -5], "size": [3, 4, 3], "uv": [32, 35] }
+					]
+				}
+			]
+		}
+	]
+}

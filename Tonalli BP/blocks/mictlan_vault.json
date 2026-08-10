@@ -1,0 +1,98 @@
+{
+	"format_version": "1.26.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "to:mictlan_vault",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"to:state": ["idle", "active", "looting"]
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": ["minecraft:cardinal_direction"],
+					"y_rotation_offset": 90
+				}
+			}
+		},
+		"components": {
+			"to:mictlan_vault": {},
+			"minecraft:geometry": "minecraft:geometry.full_block",
+			"minecraft:material_instances": {
+				"*": { "texture": "mictlan_vault_side_off", "render_method": "alpha_test" },
+				"up": { "texture": "mictlan_vault_top", "render_method": "alpha_test" },
+				"down": { "texture": "mictlan_vault_bottom", "render_method": "alpha_test" },
+				"north": { "texture": "mictlan_vault_front_off", "render_method": "alpha_test" }
+			},
+			"minecraft:destructible_by_mining": false,
+			"minecraft:destructible_by_explosion": false,
+			"minecraft:movable": {
+				"movement_type": "immovable"
+			},
+			"minecraft:tick": {
+				"interval_range": [20, 20],
+				"looping": true
+			},
+			"minecraft:light_emission": 5
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('to:state') == 'active'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": { "texture": "mictlan_vault_side_on", "render_method": "alpha_test" },
+						"up": { "texture": "mictlan_vault_top", "render_method": "alpha_test" },
+						"down": { "texture": "mictlan_vault_bottom", "render_method": "alpha_test" },
+						"north": { "texture": "mictlan_vault_front_on", "render_method": "alpha_test" }
+					},
+					"minecraft:light_emission": 12
+				}
+			},
+			{
+				"condition": "query.block_state('to:state') == 'looting'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": { "texture": "mictlan_vault_side_on", "render_method": "alpha_test" },
+						"up": { "texture": "mictlan_vault_top", "render_method": "alpha_test" },
+						"down": { "texture": "mictlan_vault_bottom", "render_method": "alpha_test" },
+						"north": { "texture": "mictlan_vault_front_ejected", "render_method": "alpha_test" }
+					},
+					"minecraft:light_emission": 12
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 90, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 180, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 270, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 0, 0]
+					}
+				}
+			}
+		]
+	}
+}

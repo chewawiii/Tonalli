@@ -1,0 +1,19 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "loot_table",
+					"name": "loot_tables/chests/mictlan_spawner/reward_common_ominous.json",
+					"weight": 2
+				},
+				{
+					"type": "loot_table",
+					"name": "loot_tables/chests/mictlan_spawner/reward_rare_ominous.json",
+					"weight": 8
+				}
+			]
+		}
+	]
+}

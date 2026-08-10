@@ -1,0 +1,39 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "to:tezcatlipoca_follower",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"variant0": "textures/entity/tezcatlipoca_follower/followers_of_tezcatlipoca_texture.png",
+				"variant1": "textures/entity/tezcatlipoca_follower/followers_of_tezcatlipoca_texture_1.png",
+				"variant2": "textures/entity/tezcatlipoca_follower/followers_of_tezcatlipoca_texture_2.png",
+				"variant3": "textures/entity/tezcatlipoca_follower/followers_of_tezcatlipoca_texture_3.png",
+				"variant4": "textures/entity/tezcatlipoca_follower/followers_of_tezcatlipoca_texture_4.png",
+				"variant5": "textures/entity/tezcatlipoca_follower/followers_of_tezcatlipoca_texture_5.png"
+			},
+			"geometry": {
+				"default": "geometry.tezcatlipoca_follower"
+			},
+			"render_controllers": ["controller.render.sun_follower"],
+			"enable_attachables": true,
+			"animations": {
+				"walk_controller": "controller.animation.run_target",
+				"attack_controller": "controller.animation.melee",
+				"idle": "animation.tezcatlipoca_follower.idle",
+				"walk": "animation.tezcatlipoca_follower.walk",
+				"run": "animation.tezcatlipoca_follower.run",
+				"attack": "animation.tezcatlipoca_follower.attack",
+				"look_at_target": "animation.basic.look_at_target"
+			},
+			"scripts": {
+				"animate": ["walk_controller", "attack_controller", "look_at_target"]
+			},
+			"spawn_egg": {
+				"texture": "sun_follower_spawn_egg"
+			}
+		}
+	}
+}
