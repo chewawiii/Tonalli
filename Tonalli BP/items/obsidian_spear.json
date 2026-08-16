@@ -83,6 +83,14 @@
 				"category": "spear",
 				"type": "attack"
 			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["to:obsidian_fragment"],
+						"repair_amount": 20
+					}
+				]
+			},
 			"minecraft:can_destroy_in_creative": false
 		}
 	}

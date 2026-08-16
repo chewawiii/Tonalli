@@ -32,7 +32,7 @@
 				"animate": ["walk_controller", "attack_controller", "look_at_target"]
 			},
 			"spawn_egg": {
-				"texture": "sun_follower_spawn_egg"
+				"texture": "tezcatlipoca_follower_spawn_egg"
 			}
 		}
 	}

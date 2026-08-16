@@ -23,18 +23,13 @@
 			"minecraft:destructible_by_explosion": false,
 			"minecraft:movable": {
 				"movement_type": "immovable"
+			},
+			"minecraft:tick": {
+				"interval_range": [20, 20],
+				"looping": true
 			}
 		},
 		"permutations": [
-			{
-				"condition": "query.block_state('to:state') != 'none'",
-				"components": {
-					"minecraft:tick": {
-						"interval_range": [20, 20],
-						"looping": true
-					}
-				}
-			},
 			{
 				"condition": "query.block_state('to:state') == 'cooldown'",
 				"components": {

@@ -32,13 +32,24 @@
 					]
 				},
 				{
-					"weight": 5,
+					"weight": 3,
 					"type": "item",
 					"name": "to:macuahuitl",
 					"functions": [
 						{
 							"function": "set_damage",
-							"damage": 25
+							"damage": 200
+						}
+					]
+				},
+				{
+					"weight": 3,
+					"type": "item",
+					"name": "to:obsidian_spear",
+					"functions": [
+						{
+							"function": "set_damage",
+							"damage": 200
 						}
 					]
 				},

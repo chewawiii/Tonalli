@@ -1,0 +1,20 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:template_pool": {
+		"description": {
+			"identifier": "to:piramide1_pool"
+		},
+		"fallback": "minecraft:empty",
+		"elements": [
+			{
+				"weight": 1,
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "to/piramide1",
+					"projection": "rigid",
+					"processors": "to:empty_processors"
+				}
+			}
+		]
+	}
+}

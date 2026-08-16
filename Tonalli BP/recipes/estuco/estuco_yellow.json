@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "to:yellow_estuco"
+		},
+		"tags": ["crafting_table"],
+		"key": {
+			"e": {
+				"item": "to:white_estuco"
+			},
+			"d": {
+				"item": "minecraft:yellow_dye"
+			}
+		},
+		"pattern": ["eee", "ede", "eee"],
+		"result": {
+			"item": "to:yellow_estuco",
+			"count": 4
+		},
+		"unlock": [
+			{
+				"item": "to:white_estuco"
+			}
+		]
+	}
+}

@@ -44,17 +44,6 @@
 							}
 						}
 					]
-				},
-				{
-					"weight": 1,
-					"type": "item",
-					"name": "to:obsidian_spear",
-					"functions": [
-						{
-							"function": "set_damage",
-							"damage": 25
-						}
-					]
 				}
 			]
 		}

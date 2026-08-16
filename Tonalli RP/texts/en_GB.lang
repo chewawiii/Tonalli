@@ -30,6 +30,7 @@ tile.to:ahuizotl_altar.name=Ahuizotl Altar
 tile.to:mictlan_spawner.name=Mictlan Spawner
 tile.to:mictlan_vault.name=Mictlan Vault
 tile.to:mictlan_vault_ominous.name=Mictlan Vault Ominous
+tile.to:jade_block.name=Jade Block
 
 ### ITEMS ###
 

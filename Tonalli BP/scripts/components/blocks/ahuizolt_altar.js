@@ -1,4 +1,4 @@
-import { system } from "@minecraft/server";
+import { ItemStack, system } from "@minecraft/server";
 import { addCooldown } from "../../main";
 import { randomOffset } from "../index";
 
@@ -6,12 +6,15 @@ import { randomOffset } from "../index";
 export const AhuizotlAltarComponent = {
 	onPlayerInteract: ({ player, block, dimension }) => {
 		const inventory = player.getComponent("inventory").container;
-		const item = inventory.getItem(player.selectedSlotIndex);
+		let item = inventory.getItem(player.selectedSlotIndex);
 		if (item?.typeId !== "to:tlaloc_jewel") return;
 		if (block.permutation.getState("to:is_active")) return;
 
 		block.setPermutation(block.permutation.withState("to:is_active", true));
 		addCooldown("to:ahuizolt_cooldowns", block.location, system.currentTick + 20 * 60 * 30);
+
+		item = item.amount > 1 ? new ItemStack(item.typeId, item.amount - 1) : undefined;
+		inventory.setItem(player.selectedSlotIndex, item);
 
 		dimension.runCommand("weather thunder");
 		dimension
@@ -21,7 +24,6 @@ export const AhuizotlAltarComponent = {
 				maxDistance: 25,
 			})
 			.forEach((p) => p.addEffect("minecraft:blindness", 20 * 4, { showParticles: false }));
-
 		let times = 0;
 		const interval = system.runInterval(() => {
 			times++;

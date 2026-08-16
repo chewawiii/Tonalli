@@ -31,6 +31,7 @@ tile.to:ahuizotl_altar.name=Altar de Ahuizotl
 tile.to:mictlan_spawner.name=Generador de Mictlan
 tile.to:mictlan_vault.name=Boveda de Mictlan
 tile.to:mictlan_vault_ominous.name=Boveda de Mictlan Ominosa
+tile.to:jade_block.name=Bloque de Jade
 
 ### ITEMS ###
 

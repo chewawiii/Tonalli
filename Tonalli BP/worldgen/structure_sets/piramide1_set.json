@@ -1,0 +1,21 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:structure_set": {
+		"description": {
+			"identifier": "to:piramide1_set"
+		},
+		"placement": {
+			"type": "minecraft:random_spread",
+			"salt": 71298345,
+			"separation": 8,
+			"spacing": 34,
+			"spread_type": "linear"
+		},
+		"structures": [
+			{
+				"structure": "to:piramide1_structure",
+				"weight": 1
+			}
+		]
+	}
+}

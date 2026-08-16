@@ -27,6 +27,14 @@
 			},
 			"minecraft:tags": {
 				"tags": ["minecraft:is_sword"]
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["to:obsidian_fragment"],
+						"repair_amount": 20
+					}
+				]
 			}
 		}
 	}

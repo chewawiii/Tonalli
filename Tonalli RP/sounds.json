@@ -8,6 +8,14 @@
 					"step": { "sound": "mob.parched.step", "pitch": 1, "volume": 1 },
 					"ambient": { "sound": "mob.parched.ambient", "pitch": 1, "volume": 1 }
 				}
+			},
+			"to:tezcatlipoca_follower": {
+				"events": {
+					"hurt": { "sound": "mob.parched.hurt", "pitch": 1, "volume": 1 },
+					"death": { "sound": "mob.parched.death", "pitch": 1, "volume": 1 },
+					"step": { "sound": "mob.parched.step", "pitch": 1, "volume": 1 },
+					"ambient": { "sound": "mob.parched.ambient", "pitch": 1, "volume": 1 }
+				}
 			}
 		}
 	}

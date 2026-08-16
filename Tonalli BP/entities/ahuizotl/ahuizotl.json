@@ -2,13 +2,16 @@
 	"format_version": "1.26.0",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "to:ahuizotl",
+			"identifier": "to:ahuizolt",
 			"spawn_category": "monster",
 			"is_experimental": false,
 			"is_spawnable": true,
 			"is_summonable": true
 		},
 		"components": {
+			"minecraft:scale": {
+				"value": 1.5
+			},
 			"minecraft:type_family": {
 				"family": ["tonalli", "monster", "ahuizotl"]
 			},
@@ -17,7 +20,7 @@
 				"max": 200
 			},
 			"minecraft:attack": {
-				"damage": 10
+				"damage": 18
 			},
 			"minecraft:collision_box": {
 				"height": 1.31,

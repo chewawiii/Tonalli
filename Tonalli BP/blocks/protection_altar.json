@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "to:protection_altar",
 			"menu_category": {
-				"category": "construction"
+				"category": "items"
 			},
 			"traits": {
 				"minecraft:placement_direction": {
@@ -14,6 +14,7 @@
 			}
 		},
 		"components": {
+			"to:protection_altar": {},
 			"minecraft:geometry": "geometry.protection_altar",
 			"minecraft:material_instances": {
 				"*": {
@@ -21,37 +22,13 @@
 					"render_method": "alpha_test"
 				}
 			},
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 1.5,
-				"item_specific_speeds": [
-					{
-						"item": { "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:wooden_tier')" },
-						"destroy_speed": 1.15
-					},
-					{
-						"item": { "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:stone_tier')" },
-						"destroy_speed": 0.6
-					},
-					{
-						"item": { "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier')" },
-						"destroy_speed": 0.4
-					},
-					{
-						"item": { "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:golden_tier')" },
-						"destroy_speed": 0.2
-					},
-					{
-						"item": { "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:diamond_tier')" },
-						"destroy_speed": 0.3
-					},
-					{
-						"item": { "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:netherite_tier')" },
-						"destroy_speed": 0.25
-					}
-				]
-			},
+			"minecraft:destructible_by_mining": false,
 			"minecraft:destructible_by_explosion": false,
-			"minecraft:map_color": "#6A6D6A"
+			"minecraft:map_color": "#6A6D6A",
+			"minecraft:tick": {
+				"interval_range": [20, 20],
+				"looping": true
+			}
 		},
 		"permutations": [
 			{

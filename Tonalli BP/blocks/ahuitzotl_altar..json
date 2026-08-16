@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "to:ahuizotl_altar",
 			"menu_category": {
-				"category": "construction"
+				"category": "items"
 			},
 			"states": {
 				"to:is_active": [false, true]

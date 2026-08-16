@@ -201,7 +201,7 @@ function handleEjected(block, dimension) {
 	const interval = system.runInterval(() => {
 		if (rolls >= totalRolls) {
 			if (keyChancePassed === null) {
-				keyChancePassed = Math.random() < 0.25;
+				keyChancePassed = Math.random() < 0.3;
 			}
 
 			if (keyChancePassed && keyRolls < totalRolls) {
@@ -231,6 +231,10 @@ function handleEjected(block, dimension) {
 	}, 20);
 }
 
+/**
+ * @param {import("@minecraft/server").Block} block
+ * @param {import("@minecraft/server").Dimension} dimension
+ */
 function handleCooldown(block, dimension) {
 	const dummy = dimension.getEntities({
 		location: block.location,
@@ -238,6 +242,27 @@ function handleCooldown(block, dimension) {
 		maxDistance: 1,
 	})[0];
 	if (!dummy) return;
+
+	const offset = [
+		{ x: 0.25, z: 0.25 },
+		{ x: 0.25, z: 0.5 },
+		{ x: 0.5, z: 0.75 },
+		{ x: 0.5, z: 0.25 },
+		{ x: 0.5, z: 0.5 },
+		{ x: 0.75, z: 0.5 },
+		{ x: 0.75, z: 0.25 },
+		{ x: 0.75, z: 0.5 },
+		{ x: 0.75, z: 0.75 },
+	];
+	for (const o of offset) {
+		system.runTimeout(() => {
+			dimension.spawnParticle("minecraft:basic_smoke_particle", {
+				x: block.location.x + o.x,
+				y: block.location.y + 1,
+				z: block.location.z + o.z,
+			});
+		}, Math.random() * 10);
+	}
 
 	const record = getEntities(dummy);
 	if (record.cooldownExpire === null || system.currentTick < record.cooldownExpire) return;
@@ -288,6 +313,9 @@ function clearRecord(entity) {
 	entity.setDynamicProperty("to:alive_mobs", undefined);
 }
 
+/**
+ * @param {import("@minecraft/server").Dimension} dimension
+ */
 function spawnMob(typeId, block, dimension, record, isOminous) {
 	const offset = randomOffset(4);
 	const location = {
@@ -295,6 +323,9 @@ function spawnMob(typeId, block, dimension, record, isOminous) {
 		y: block.location.y,
 		z: block.location.z + 0.5 + offset.z,
 	};
+	const spawnBlock = dimension.getBlock(location);
+	if (spawnBlock.typeId !== "minecraft:air" || spawnBlock.above().typeId !== "minecraft:air") return;
+
 	const mob = dimension.spawnEntity(typeId, location);
 	record.aliveIds.push(mob.id);
 	record.totalSpawned++;

@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "to:mictlan_vault",
 			"menu_category": {
-				"category": "construction"
+				"category": "nature"
 			},
 			"states": {
 				"to:state": ["idle", "active", "looting"]
