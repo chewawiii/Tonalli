@@ -1,0 +1,42 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "tonalli:solar_follower",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"black": "textures/entity/solar_follower/solar_follower_black.png",
+				"gold": "textures/entity/solar_follower/solar_follower_gold.png",
+				"green": "textures/entity/solar_follower/solar_follower_green.png",
+				"red": "textures/entity/solar_follower/solar_follower_red.png",
+				"yellow": "textures/entity/solar_follower/solar_follower_yellow.png",
+				"base": "textures/entity/solar_follower/solar_follower.png"
+			},
+			"geometry": {
+				"default": "geometry.solar_follower"
+			},
+			"sound_effects": {
+				"tonalli.sword_attack": "tonalli.sword_attack"
+			},
+			"render_controllers": ["controller.render.solar_follower"],
+			"enable_attachables": true,
+			"animations": {
+				"walk_controller": "controller.animation.run_target",
+				"attack_controller": "controller.animation.melee",
+				"idle": "animation.solar_follower.idle",
+				"walk": "animation.solar_follower.walk",
+				"run": "animation.solar_follower.run",
+				"attack": "animation.solar_follower.attack",
+				"look_at_target": "animation.basic.look_at_target"
+			},
+			"scripts": {
+				"animate": ["walk_controller", "attack_controller", "look_at_target"]
+			},
+			"spawn_egg": {
+				"texture": "solar_follower_spawn_egg"
+			}
+		}
+	}
+}

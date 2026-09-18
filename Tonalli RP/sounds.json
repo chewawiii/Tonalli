@@ -1,20 +1,78 @@
 {
 	"entity_sounds": {
 		"entities": {
-			"to:sun_follower": {
+			"tonalli:jade_mask": {
+				"volume": 1,
+				"pitch": 0.8,
 				"events": {
-					"hurt": { "sound": "mob.parched.hurt", "pitch": 1, "volume": 1 },
-					"death": { "sound": "mob.parched.death", "pitch": 1, "volume": 1 },
-					"step": { "sound": "mob.parched.step", "pitch": 1, "volume": 1 },
-					"ambient": { "sound": "mob.parched.ambient", "pitch": 1, "volume": 1 }
+					"ambient": { "sound": "tonalli.undead.ambient" },
+					"step": { "sound": "mob.parched.step" },
+					"hurt": { "sound": "tonalli.undead.hurt" },
+					"death": { "sound": "tonalli.undead.death" }
 				}
 			},
-			"to:tezcatlipoca_follower": {
+			"tonalli:teopixqui_jade": {
+				"volume": 1,
+				"pitch": 0.8,
 				"events": {
-					"hurt": { "sound": "mob.parched.hurt", "pitch": 1, "volume": 1 },
-					"death": { "sound": "mob.parched.death", "pitch": 1, "volume": 1 },
-					"step": { "sound": "mob.parched.step", "pitch": 1, "volume": 1 },
-					"ambient": { "sound": "mob.parched.ambient", "pitch": 1, "volume": 1 }
+					"ambient": { "sound": "teopixqui_jade.ambient" },
+					"step": { "sound": "mob.parched.step" },
+					"hurt": { "sound": "tonalli.undead.hurt" },
+					"death": { "sound": "tonalli.undead.death" }
+				}
+			},
+			"tonalli:tezcatlipoca_follower": {
+				"volume": 1,
+				"pitch": 0.8,
+				"events": {
+					"ambient": { "sound": "tonalli.undead.ambient" },
+					"step": { "sound": "mob.parched.step" },
+					"hurt": { "sound": "tonalli.undead.hurt" },
+					"death": { "sound": "tonalli.undead.death" }
+				}
+			},
+			"tonalli:solar_champion": {
+				"volume": 1,
+				"pitch": 0.8,
+				"events": {
+					"ambient": { "sound": "tonalli.undead.ambient" },
+					"step": { "sound": "mob.parched.step" },
+					"hurt": { "sound": "tonalli.undead.hurt" },
+					"death": { "sound": "tonalli.undead.death" }
+				}
+			},
+			"tonalli:solar_follower": {
+				"volume": 1,
+				"pitch": 0.8,
+				"events": {
+					"ambient": { "sound": "tonalli.undead.ambient" },
+					"step": { "sound": "mob.parched.step" },
+					"hurt": { "sound": "tonalli.undead.hurt" },
+					"death": { "sound": "tonalli.undead.death" }
+				}
+			},
+			"tonalli:solar_herald": {
+				"volume": 1,
+				"pitch": 0.8,
+				"events": {
+					"ambient": { "sound": "tonalli.undead.ambient" },
+					"step": { "sound": "mob.parched.step" },
+					"hurt": { "sound": "tonalli.undead.hurt" },
+					"death": { "sound": "tonalli.undead.death" }
+				}
+			},
+			"tonalli:the_constructor": {
+				"volume": 1,
+				"pitch": 0.8,
+				"events": {
+					"hurt": { "sound": "constructor.hurt" }
+				}
+			},
+			"tonalli:ahuizotl": {
+				"volume": 1,
+				"pitch": 0.8,
+				"events": {
+					"ambient": { "sound": "ahuizotl.ambient" }
 				}
 			}
 		}

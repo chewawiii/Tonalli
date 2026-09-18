@@ -2,21 +2,21 @@
 	"format_version": "1.20.10",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "to:mossy_volcanic_stone_bricks"
+			"identifier": "tonalli:mossy_volcanic_stone_bricks"
 		},
 		"tags": ["stonecutter"],
 		"ingredients": [
 			{
-				"item": "to:volcanic_stone"
+				"item": "tonalli:volcanic_stone"
 			}
 		],
 		"result": {
-			"item": "to:mossy_volcanic_stone_bricks",
+			"item": "tonalli:mossy_volcanic_stone_bricks",
 			"count": 1
 		},
 		"unlock": [
 			{
-				"item": "to:volcanic_stone"
+				"item": "tonalli:volcanic_stone"
 			}
 		]
 	}

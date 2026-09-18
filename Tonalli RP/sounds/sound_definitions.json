@@ -1,0 +1,104 @@
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"huitzilopochtli.music": {
+			"category": "music",
+			"max_distance": 16,
+			"sounds": ["sounds/music_disc/music_disc_huitzilopochtli"]
+		},
+		"quetzalcoatl.music": {
+			"category": "music",
+			"max_distance": 16,
+			"sounds": ["sounds/music_disc/music_disc_quetzalcoatl"]
+		},
+		"tezcatlipoca.music": {
+			"category": "music",
+			"max_distance": 16,
+			"sounds": ["sounds/music_disc/music_disc_tezcatlipoca"]
+		},
+
+		"ahuizotl.ambient": {
+			"category": "hostile",
+			"max_distance": 4,
+			"sounds": [
+				"sounds/ahuitzotl/ahuitzotl_1",
+				"sounds/ahuitzotl/ahuitzotl_2",
+				"sounds/ahuitzotl/ahuitzotl_3",
+				"sounds/ahuitzotl/ahuitzotl_4",
+				"sounds/ahuitzotl/ahuitzotl_5",
+				"sounds/ahuitzotl/ahuitzotl_6",
+				"sounds/ahuitzotl/ahuitzotl_7",
+				"sounds/ahuitzotl/ahuitzotl_8",
+				"sounds/ahuitzotl/ahuitzotl_9",
+				"sounds/ahuitzotl/ahuitzotl_10"
+			]
+		},
+		"aztec_whistle": {
+			"category": "ambient",
+			"max_distance": 16,
+			"sounds": [
+				"sounds/aztec_whistle/aztec_whistle_1",
+				"sounds/aztec_whistle/aztec_whistle_2",
+				"sounds/aztec_whistle/aztec_whistle_3",
+				"sounds/aztec_whistle/aztec_whistle_4",
+				"sounds/aztec_whistle/aztec_whistle_5"
+			]
+		},
+		"teopixqui_jade.ambient": {
+			"category": "hostile",
+			"max_distance": 4,
+			"sounds": [
+				"sounds/teopixqui_jade/susurro_1",
+				"sounds/teopixqui_jade/susurro_2",
+				"sounds/teopixqui_jade/susurro_3",
+				"sounds/teopixqui_jade/susurro_4",
+				"sounds/teopixqui_jade/susurro_5",
+				"sounds/teopixqui_jade/susurro_6",
+				"sounds/teopixqui_jade/susurro_7",
+				"sounds/teopixqui_jade/susurro_8",
+				"sounds/teopixqui_jade/susurro_9",
+				"sounds/teopixqui_jade/susurro_10"
+			]
+		},
+		"constructor.hurt": {
+			"category": "hostile",
+			"max_distance": 4,
+			"sounds": ["sounds/the_constructor/sonido_daño_1"]
+		},
+		"constructor.attack": {
+			"category": "hostile",
+			"max_distance": 4,
+			"sounds": ["sounds/the_constructor/sonido_de_ataque_1"]
+		},
+		"constructor.death": {
+			"category": "hostile",
+			"max_distance": 4,
+			"sounds": ["sounds/the_constructor/sonido_de_muerte_1"]
+		},
+		"tonalli.undead.ambient": {
+			"category": "hostile",
+			"max_distance": 4,
+			"sounds": ["sounds/tonalli_undeads/idle1", "sounds/tonalli_undeads/idle2"]
+		},
+		"tonalli.undead.hurt": {
+			"category": "hostile",
+			"max_distance": 4,
+			"sounds": ["sounds/tonalli_undeads/hurt1", "sounds/tonalli_undeads/hurt2"]
+		},
+		"tonalli.heavy_attack": {
+			"category": "hostile",
+			"max_distance": 4,
+			"sounds": ["sounds/tonalli_undeads/heavy_attack"]
+		},
+		"tonalli.sword_attack": {
+			"category": "hostile",
+			"max_distance": 4,
+			"sounds": ["sounds/tonalli_undeads/sword_attack"]
+		},
+		"tonalli.undead.death": {
+			"category": "hostile",
+			"max_distance": 4,
+			"sounds": ["sounds/tonalli_undeads/death"]
+		}
+	}
+}

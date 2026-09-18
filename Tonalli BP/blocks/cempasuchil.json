@@ -1,8 +1,8 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:block": {
 		"description": {
-			"identifier": "to:cempasuchil",
+			"identifier": "tonalli:cempasuchil",
 			"menu_category": {
 				"category": "nature"
 			}
@@ -12,8 +12,13 @@
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "cempasuchil",
-					"render_method": "alpha_test_single_sided"
+					"render_method": "alpha_test_single_sided",
+					"face_dimming": false,
+					"ambient_occlusion": 0.0
 				}
+			},
+			"minecraft:sound": {
+				"sound": "grass"
 			},
 			"minecraft:collision_box": false,
 			"minecraft:selection_box": {

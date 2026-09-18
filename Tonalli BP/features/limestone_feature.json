@@ -2,12 +2,12 @@
 	"format_version": "1.17.0",
 	"minecraft:ore_feature": {
 		"description": {
-			"identifier": "to:limestone_feature"
+			"identifier": "tonalli:limestone_feature"
 		},
 		"count": 55,
 		"replace_rules": [
 			{
-				"places_block": "to:limestone",
+				"places_block": "tonalli:limestone",
 				"may_replace": ["minecraft:stone"]
 			}
 		]

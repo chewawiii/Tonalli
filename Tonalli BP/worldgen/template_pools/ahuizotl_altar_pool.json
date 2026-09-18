@@ -2,7 +2,7 @@
 	"format_version": "1.21.20",
 	"minecraft:template_pool": {
 		"description": {
-			"identifier": "to:ahuizotl_altar_pool"
+			"identifier": "tonalli:ahuizotl_altar_pool"
 		},
 		"fallback": "minecraft:empty",
 		"elements": [
@@ -11,8 +11,7 @@
 				"element": {
 					"element_type": "minecraft:single_pool_element",
 					"location": "to/ahuizotl_altar",
-					"projection": "rigid",
-					"processors": "to:empty_processors"
+					"projection": "rigid"
 				}
 			}
 		]

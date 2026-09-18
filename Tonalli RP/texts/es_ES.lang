@@ -1,65 +1,84 @@
 
 ### BLOQUES ###
-tile.to:blue_estuco.name=Estuco Azul
-tile.to:ornamental_veneered_estuco.name=Estuco Chapado Ornamental
-tile.to:red_estuco.name=Estuco Rojo
-tile.to:veneered_estuco.name=Estuco Chapado
-tile.to:white_estuco.name=Estuco Blanco
-tile.to:yellow_estuco.name=Estuco Amarillo
+tile.tonalli:blue_estuco.name=Estuco Azul
+tile.tonalli:ornamental_veneered_estuco.name=Estuco Chapado Ornamental
+tile.tonalli:red_estuco.name=Estuco Rojo
+tile.tonalli:veneered_estuco.name=Estuco Chapado
+tile.tonalli:white_estuco.name=Estuco Blanco
+tile.tonalli:yellow_estuco.name=Estuco Amarillo
 
-tile.to:broken_limestone_bricks.name=Ladrillos Rotos de Caliza
-tile.to:chiseled_limestone.name=Caliza Cincelada
-tile.to:limestone.name=Caliza
-tile.to:limestone_bricks.name=Ladrillos de Caliza
-tile.to:mossy_limestone_bricks.name=Ladrillos Moscosos de Caliza
-tile.to:polished_limestone.name=Caliza Pulida
+tile.tonalli:broken_limestone_bricks.name=Ladrillos Rotos de Caliza
+tile.tonalli:chiseled_limestone.name=Caliza Cincelada
+tile.tonalli:limestone.name=Caliza
+tile.tonalli:limestone_bricks.name=Ladrillos de Caliza
+tile.tonalli:mossy_limestone_bricks.name=Ladrillos Moscosos de Caliza
+tile.tonalli:polished_limestone.name=Caliza Pulida
 
-tile.to:broken_volcanic_stone_bricks.name=Ladrillos Rotos de Piedra Volcanica
-tile.to:chiseled_volcanic_stone.name=Piedra Volcanica Cincelada
-tile.to:mossy_volcanic_stone_bricks.name=Ladrillos Moscosos de Piedra Volcanica
-tile.to:polished_volcanic_stone.name=Piedra Volcanica Pulida
-tile.to:volcanic_stone.name=Piedra Volcanica
-tile.to:volcanic_stone_bricks.name=Ladrillos de Piedra Volcanica
+tile.tonalli:broken_volcanic_stone_bricks.name=Ladrillos Rotos de Piedra Volcanica
+tile.tonalli:chiseled_volcanic_stone.name=Piedra Volcanica Cincelada
+tile.tonalli:mossy_volcanic_stone_bricks.name=Ladrillos Moscosos de Piedra Volcanica
+tile.tonalli:polished_volcanic_stone.name=Piedra Volcanica Pulida
+tile.tonalli:volcanic_stone.name=Piedra Volcanica
+tile.tonalli:volcanic_stone_bricks.name=Ladrillos de Piedra Volcanica
 
-tile.to:cempasuchil.name=Cempasuchil
-tile.to:engraved_stone.name=Piedra Gravada
-tile.to:engraved_gold.name=Oro Gravado
+tile.tonalli:cempasuchil.name=Cempasuchil
+tile.tonalli:engraved_stone.name=Piedra Gravada
+tile.tonalli:engraved_gold.name=Oro Gravado
 
-tile.to:protection_altar.name=Altar de Proteccion
-tile.to:ahuizotl_altar.name=Altar de Ahuizotl
+tile.tonalli:protection_altar.name=Altar de Proteccion
+tile.tonalli:ahuizotl_altar.name=Altar de Ahuizotl
 
-tile.to:mictlan_spawner.name=Generador de Mictlan
-tile.to:mictlan_vault.name=Boveda de Mictlan
-tile.to:mictlan_vault_ominous.name=Boveda de Mictlan Ominosa
-tile.to:jade_block.name=Bloque de Jade
+tile.tonalli:mictlan_spawner.name=Generador de Mictlan
+tile.tonalli:mictlan_vault.name=Boveda de Mictlan
+tile.tonalli:mictlan_vault_ominous.name=Boveda de Mictlan Ominosa
+tile.tonalli:jade_block.name=Bloque de Jade
 
 ### ITEMS ###
+item.tonalli:cempasuchil=Cempasuchil
 
-item.to:ahuitzolt_heart=Corazon de Ahuizolt
-item.to:corn=Maiz
-item.to:jade_fragment=Fragmento de Jade
-item.to:jade_heart=Corazon de Jade
-item.to:jade_key=Llave de Jade
-item.to:macuahuitl=Macuahuitl
-item.to:mictlan_key=Llave de Mictlan
-item.to:sun_stone=Piedra del Sol
-item.to:chile=Chile
-item.to:pozole=Pozole
-item.to:obsidian_fragment=Fragmento de obsidiana
-item.to:obsidian_spear=Lanza de obsidiana
-item.to:tlaloc_jewel=Joya de Tlaloc
+item.tonalli:ahuitzolt_heart=Corazon de Ahuizolt
+item.tonalli:corn=Maiz
+item.tonalli:jade_fragment=Fragmento de Jade
+item.tonalli:jade_heart=Corazon de Jade
+item.tonalli:jade_key=Llave de Jade
+item.tonalli:macuahuitl=Macuahuitl
+item.tonalli:mictlan_key=Llave de Mictlan
+item.tonalli:sun_stone=Piedra del Sol
+item.tonalli:chile=Chile
+item.tonalli:pozole=Pozole
+item.tonalli:obsidian_fragment=Fragmento de obsidiana
+item.tonalli:obsidian_spear=Lanza de obsidiana
+item.tonalli:tlaloc_jewel=Joya de Tlaloc
+item.tonalli:aztec_whistle=Silbato Azteca
+item.tonalli:music_disc_huitzilopochtli=§eDisco de música\n§7Huitzilopochtli - The Mesoamerican Orchestra
+item.tonalli:music_disc_quetzalcoatl=§eDisco de música\n§7Quetzalcoatl - The Mesoamerican Orchestra
+item.tonalli:music_disc_tezcatlipoca=§eDisco de música\n§7Tezcatlipoca - The Mesoamerican Orchestra
 
 #### ENTIDADES ###
+entity.tonalli:solar_champion.name=Campeon del sol
+item.spawn_egg.entity.tonalli:solar_champion.name=Huevo generador de Campeon del sol
 
-entity.to:ahuizolt.name=Ahuizolt
-entity.to:ahuizolt_death.name=Ahuizolt
-item.spawn_egg.entity.to:ahuizolt.name=Spawn Ahuizolt
+entity.tonalli:solar_herald.name=Heraldo Solar
+item.spawn_egg.entity.tonalli:solar_herald.name=Huevo generador de Heraldo Solar
 
-entity.to:jaguar_warrior.name=Guerrero Jaguar
-item.spawn_egg.entity.to:jaguar_warrior.name=Spawn Guerrero Jaguar
+entity.tonalli:ahuizotl.name=Ahuizolt
+entity.tonalli:ahuizotl_death.name=Ahuizolt
+item.spawn_egg.entity.tonalli:ahuizotl.name=Huevo generador de Ahuizolt
 
-entity.to:sun_follower.name=Seguidor del Sol
-item.spawn_egg.entity.to:sun_follower.name=Spawn Seguidor del Sol
+entity.tonalli:jaguar_warrior.name=Guerrero Jaguar
+item.spawn_egg.entity.tonalli:jaguar_warrior.name=Huevo generador de Guerrero Jaguar
 
-entity.to:tezcatlipoca_follower.name=Seguidor de Tezcatlipoca
-item.spawn_egg.entity.to:tezcatlipoca_follower.name=Huevo generador de Seguidor de Tezcatlipoca
+entity.tonalli:solar_follower.name=Seguidor del Sol
+item.spawn_egg.entity.tonalli:solar_follower.name=Huevo generador de Seguidor del Sol
+
+entity.tonalli:tezcatlipoca_follower.name=Seguidor de Tezcatlipoca
+item.spawn_egg.entity.tonalli:tezcatlipoca_follower.name=Huevo generador de Seguidor de Tezcatlipoca
+
+entity.tonalli:teopixqui_jade.name=Teopixqui de Jade
+item.spawn_egg.entity.tonalli:teopixqui_jade.name=Huevo generador de Teopixqui de Jade
+
+entity.tonalli:jade_mask.name=Enmascarado de Jade
+item.spawn_egg.entity.tonalli:jade_mask.name=Huevo generador de Enmascarado de Jade
+
+entity.tonalli:the_constructor.name=El Constructor
+item.spawn_egg.entity.tonalli:the_constructor.name=Huevo generador de El Constructor

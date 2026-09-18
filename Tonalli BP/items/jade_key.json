@@ -2,7 +2,7 @@
 	"format_version": "1.26.30",
 	"minecraft:item": {
 		"description": {
-			"identifier": "to:jade_key",
+			"identifier": "tonalli:jade_key",
 			"menu_category": {
 				"category": "items"
 			}

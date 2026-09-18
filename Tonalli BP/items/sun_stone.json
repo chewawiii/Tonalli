@@ -2,7 +2,7 @@
 	"format_version": "1.26.30",
 	"minecraft:item": {
 		"description": {
-			"identifier": "to:sun_stone",
+			"identifier": "tonalli:sun_stone",
 			"menu_category": {
 				"category": "items"
 			}

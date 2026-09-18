@@ -2,15 +2,15 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "to:pozole"
+			"identifier": "tonalli:pozole"
 		},
 		"tags": ["crafting_table"],
 		"key": {
 			"c": {
-				"item": "to:chile"
+				"item": "tonalli:chile"
 			},
 			"m": {
-				"item": "to:corn"
+				"item": "tonalli:corn"
 			},
 			"p": {
 				"item": "minecraft:porkchop"
@@ -21,7 +21,7 @@
 		},
 		"pattern": [" c ", "mpm", " b "],
 		"result": {
-			"item": "to:pozole",
+			"item": "tonalli:pozole",
 			"count": 1
 		}
 	}

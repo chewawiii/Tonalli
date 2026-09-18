@@ -2,8 +2,8 @@
 	"format_version": "1.13.0",
 	"minecraft:feature_rules": {
 		"description": {
-			"identifier": "to:volcanic_stone_rule",
-			"places_feature": "to:volcanic_stone_feature"
+			"identifier": "tonalli:volcanic_stone_rule",
+			"places_feature": "tonalli:volcanic_stone_feature"
 		},
 		"conditions": {
 			"placement_pass": "underground_pass",

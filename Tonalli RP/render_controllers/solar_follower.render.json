@@ -1,0 +1,26 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.solar_follower": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.black",
+						"Texture.gold",
+						"Texture.green",
+						"Texture.red",
+						"Texture.yellow",
+						"Texture.base"
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": ["Array.skins[query.variant]"]
+		}
+	}
+}

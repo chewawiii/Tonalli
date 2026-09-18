@@ -2,12 +2,12 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "to:blue_estuco"
+			"identifier": "tonalli:blue_estuco"
 		},
 		"tags": ["crafting_table"],
 		"key": {
 			"e": {
-				"item": "to:white_estuco"
+				"item": "tonalli:white_estuco"
 			},
 			"d": {
 				"item": "minecraft:blue_dye"
@@ -15,12 +15,12 @@
 		},
 		"pattern": ["eee", "ede", "eee"],
 		"result": {
-			"item": "to:blue_estuco",
+			"item": "tonalli:blue_estuco",
 			"count": 4
 		},
 		"unlock": [
 			{
-				"item": "to:white_estuco"
+				"item": "tonalli:white_estuco"
 			}
 		]
 	}

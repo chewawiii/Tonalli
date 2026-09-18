@@ -1,8 +1,8 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:block": {
 		"description": {
-			"identifier": "to:mictlan_vault",
+			"identifier": "tonalli:mictlan_vault",
 			"menu_category": {
 				"category": "nature"
 			},
@@ -17,13 +17,22 @@
 			}
 		},
 		"components": {
-			"to:mictlan_vault": {},
+			"minecraft:block_entity": {
+				"dynamic_properties": true
+			},
+			"tonalli:mictlan_vault": {
+				"requiredItemId": "tonalli:mictlan_key",
+				"lootTable": "chests/mictlan_vault/mictlan_vault"
+			},
 			"minecraft:geometry": "minecraft:geometry.full_block",
 			"minecraft:material_instances": {
 				"*": { "texture": "mictlan_vault_side_off", "render_method": "alpha_test" },
 				"up": { "texture": "mictlan_vault_top", "render_method": "alpha_test" },
 				"down": { "texture": "mictlan_vault_bottom", "render_method": "alpha_test" },
 				"north": { "texture": "mictlan_vault_front_off", "render_method": "alpha_test" }
+			},
+			"minecraft:sound": {
+				"sound": "vault"
 			},
 			"minecraft:destructible_by_mining": false,
 			"minecraft:destructible_by_explosion": false,
@@ -54,7 +63,10 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": { "texture": "mictlan_vault_side_on", "render_method": "alpha_test" },
-						"up": { "texture": "mictlan_vault_top", "render_method": "alpha_test" },
+						"up": {
+							"texture": "mictlan_vault_top_ejected_ominous",
+							"render_method": "alpha_test"
+						},
 						"down": { "texture": "mictlan_vault_bottom", "render_method": "alpha_test" },
 						"north": { "texture": "mictlan_vault_front_ejected", "render_method": "alpha_test" }
 					},

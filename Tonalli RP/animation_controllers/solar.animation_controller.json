@@ -1,0 +1,63 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.solar_champion.melee": {
+			"states": {
+				"default": {
+					"transitions": [
+						{ "attack_1": "query.is_delayed_attacking && query.mark_variant == 0" },
+						{ "attack_2": "query.is_delayed_attacking && query.mark_variant == 1" },
+						{ "attack_3": "query.is_delayed_attacking && query.mark_variant == 2" },
+						{ "shield_defense": "query.mark_variant == 3" }
+					]
+				},
+				"attack_1": {
+					"animations": ["attack_1"],
+					"blend_transition": 0.1,
+					"transitions": [{ "default": "!query.is_delayed_attacking" }]
+				},
+				"attack_2": {
+					"animations": ["attack_2"],
+					"blend_transition": 0.1,
+					"transitions": [{ "default": "!query.is_delayed_attacking" }]
+				},
+				"attack_3": {
+					"animations": ["attack_3"],
+					"blend_transition": 0.1,
+					"transitions": [{ "default": "!query.is_delayed_attacking" }]
+				},
+				"shield_defense": {
+					"animations": ["shield_defense"],
+					"blend_transition": 0.1,
+					"transitions": [{ "default": "query.mark_variant != 3" }]
+				}
+			}
+		},
+		"controller.animation.solar_herald.melee": {
+			"states": {
+				"default": {
+					"transitions": [
+						{ "attack_1": "query.is_delayed_attacking && query.mark_variant == 0" },
+						{ "attack_2": "query.is_delayed_attacking && query.mark_variant == 1" },
+						{ "attack_3": "query.is_delayed_attacking && query.mark_variant == 2" }
+					]
+				},
+				"attack_1": {
+					"animations": ["attack_1"],
+					"blend_transition": 0.1,
+					"transitions": [{ "default": "!query.is_delayed_attacking" }]
+				},
+				"attack_2": {
+					"animations": ["attack_2"],
+					"blend_transition": 0.1,
+					"transitions": [{ "default": "!query.is_delayed_attacking" }]
+				},
+				"attack_3": {
+					"animations": ["attack_3"],
+					"blend_transition": 0.1,
+					"transitions": [{ "default": "query.all_animations_finished" }]
+				}
+			}
+		}
+	}
+}

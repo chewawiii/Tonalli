@@ -2,7 +2,7 @@
 	"format_version": "1.21.20",
 	"minecraft:jigsaw": {
 		"description": {
-			"identifier": "to:ahuizotl_altar_structure"
+			"identifier": "tonalli:ahuizotl_altar"
 		},
 		"biome_filters": [
 			{
@@ -12,7 +12,7 @@
 		],
 		"step": "surface_structures",
 		"terrain_adaptation": "beard_thin",
-		"start_pool": "to:ahuizotl_altar_pool",
+		"start_pool": "tonalli:ahuizotl_altar_pool",
 		"max_depth": 1,
 		"start_height": {
 			"type": "constant",

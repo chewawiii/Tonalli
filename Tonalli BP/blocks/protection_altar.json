@@ -1,8 +1,8 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:block": {
 		"description": {
-			"identifier": "to:protection_altar",
+			"identifier": "tonalli:protection_altar",
 			"menu_category": {
 				"category": "items"
 			},
@@ -14,13 +14,24 @@
 			}
 		},
 		"components": {
-			"to:protection_altar": {},
+			"minecraft:block_entity": {
+				"dynamic_properties": true
+			},
+			"tonalli:protection_altar": {
+				"itemId": "tonalli:sun_stone",
+				"effectId": "minecraft:mining_fatigue",
+				"radius": 40,
+				"amplifier": 5
+			},
 			"minecraft:geometry": "geometry.protection_altar",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "protection_altar",
 					"render_method": "alpha_test"
 				}
+			},
+			"minecraft:sound": {
+				"sound": "stone"
 			},
 			"minecraft:destructible_by_mining": false,
 			"minecraft:destructible_by_explosion": false,

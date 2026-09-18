@@ -2,21 +2,21 @@
 	"format_version": "1.20.10",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "to:chiseled_limestone"
+			"identifier": "tonalli:chiseled_limestone"
 		},
 		"tags": ["stonecutter"],
 		"ingredients": [
 			{
-				"item": "to:limestone"
+				"item": "tonalli:limestone"
 			}
 		],
 		"result": {
-			"item": "to:chiseled_limestone",
+			"item": "tonalli:chiseled_limestone",
 			"count": 1
 		},
 		"unlock": [
 			{
-				"item": "to:limestone"
+				"item": "tonalli:limestone"
 			}
 		]
 	}

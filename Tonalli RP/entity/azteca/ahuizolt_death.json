@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "tonalli:ahuizotl_death",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/ahuizotl_texture.png"
+			},
+			"geometry": {
+				"default": "geometry.ahuizotl"
+			},
+			"render_controllers": ["controller.render.default"],
+			"animations": {
+				"death": "animation.ahuizotl.death",
+				"death_controller": "controller.animation.ahuizotl.death"
+			},
+			"scripts": {
+				"animate": ["death_controller"]
+			}
+		}
+	}
+}

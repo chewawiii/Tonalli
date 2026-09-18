@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.teopixqui_jade.heal": {
+			"states": {
+				"default": {
+					"transitions": [{ "heal_allies": "query.mark_variant == 0" }]
+				},
+				"heal_allies": {
+					"animations": ["heal_allies"],
+					"transitions": [{ "default": "query.mark_variant != 0" }]
+				}
+			}
+		},
+		"controller.animation.teopixqui.ranged": {
+			"states": {
+				"default": {
+					"transitions": [{ "ranged": "query.mark_variant == 1" }]
+				},
+				"ranged": {
+					"animations": ["ranged_attack"],
+					"transitions": [{ "default": "query.mark_variant != 1" }]
+				}
+			}
+		}
+	}
+}

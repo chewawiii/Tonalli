@@ -6,7 +6,7 @@
 				{
 					"weight": 3,
 					"type": "item",
-					"name": "to:obsidian_fragment",
+					"name": "tonalli:obsidian_fragment",
 					"functions": [
 						{
 							"function": "set_count",
@@ -44,6 +44,12 @@
 							}
 						}
 					]
+				},
+				{
+					"weight": 1,
+					"type": "item",
+					"name": "tonalli:music_disc_huitzilopochtli",
+					"count": 1
 				}
 			]
 		}

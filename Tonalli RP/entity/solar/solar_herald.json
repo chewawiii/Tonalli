@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "tonalli:solar_herald",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/solar_herald_texture.png"
+			},
+			"geometry": {
+				"default": "geometry.solar_herald"
+			},
+			"render_controllers": ["controller.render.default"],
+			"sound_effects": {
+				"tonalli.heavy_attack": "tonalli.heavy_attack"
+			},
+			"animations": {
+				"walk_controller": "controller.animation.walk",
+				"attack_controller": "controller.animation.solar_herald.melee",
+				"idle": "animation.solar_herald.idle",
+				"walk": "animation.solar_herald.walking",
+				"attack_1": "animation.solar_herald.attack_1",
+				"attack_2": "animation.solar_herald.attack_2",
+				"attack_3": "animation.solar_herald.attack_3",
+				"look_at_target": "animation.basic.look_at_target"
+			},
+			"scripts": {
+				"animate": ["walk_controller", "attack_controller", "look_at_target"]
+			},
+			"spawn_egg": {
+				"texture": "solar_herald_spawn_egg"
+			}
+		}
+	}
+}

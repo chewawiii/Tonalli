@@ -2,7 +2,7 @@
 	"format_version": "1.20.10",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "to:engraved_gold"
+			"identifier": "tonalli:engraved_gold"
 		},
 		"tags": ["stonecutter"],
 		"ingredients": [
@@ -11,7 +11,7 @@
 			}
 		],
 		"result": {
-			"item": "to:engraved_gold",
+			"item": "tonalli:engraved_gold",
 			"count": 1
 		},
 		"unlock": [

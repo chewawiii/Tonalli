@@ -1,0 +1,17 @@
+{
+	"format_version": "1.26.40",
+	"animations": {
+		"animation.teopixqui_jade.heal": {
+			"animation_length": 3,
+			"timeline": {
+				"1.4": ["/scriptevent tonalli:heal_allies"]
+			}
+		},
+		"animation.teopixqui_jade.ranged": {
+			"animation_length": 6.9,
+			"timeline": {
+				"0.8": ["/scriptevent tonalli:ranged_attack"]
+			}
+		}
+	}
+}

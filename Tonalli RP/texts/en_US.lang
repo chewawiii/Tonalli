@@ -1,64 +1,83 @@
 ### BLOCKS ###
-tile.to:blue_estuco.name=Blue Stucco
-tile.to:ornamental_veneered_estuco.name=Ornamental Veneered Stucco
-tile.to:red_estuco.name=Red Stucco
-tile.to:veneered_estuco.name=Veneered Stucco
-tile.to:white_estuco.name=White Stucco
-tile.to:yellow_estuco.name=Yellow Stucco
+tile.tonalli:blue_estuco.name=Blue Stucco
+tile.tonalli:ornamental_veneered_estuco.name=Ornamental Veneered Stucco
+tile.tonalli:red_estuco.name=Red Stucco
+tile.tonalli:veneered_estuco.name=Veneered Stucco
+tile.tonalli:white_estuco.name=White Stucco
+tile.tonalli:yellow_estuco.name=Yellow Stucco
 
-tile.to:broken_limestone_bricks.name=Broken Limestone Bricks
-tile.to:chiseled_limestone.name=Chiseled Limestone
-tile.to:limestone.name=Limestone
-tile.to:limestone_bricks.name=Limestone Bricks
-tile.to:mossy_limestone_bricks.name=Mossy Limestone Bricks
-tile.to:polished_limestone.name=Polished Limestone
+tile.tonalli:broken_limestone_bricks.name=Broken Limestone Bricks
+tile.tonalli:chiseled_limestone.name=Chiseled Limestone
+tile.tonalli:limestone.name=Limestone
+tile.tonalli:limestone_bricks.name=Limestone Bricks
+tile.tonalli:mossy_limestone_bricks.name=Mossy Limestone Bricks
+tile.tonalli:polished_limestone.name=Polished Limestone
 
-tile.to:broken_volcanic_stone_bricks.name=Broken Volcanic Stone Bricks
-tile.to:chiseled_volcanic_stone.name=Chiseled Volcanic Stone
-tile.to:mossy_volcanic_stone_bricks.name=Mossy Volcanic Stone Bricks
-tile.to:polished_volcanic_stone.name=Polished Volcanic Stone
-tile.to:volcanic_stone.name=Volcanic Stone
-tile.to:volcanic_stone_bricks.name=Volcanic Stone Bricks
+tile.tonalli:broken_volcanic_stone_bricks.name=Broken Volcanic Stone Bricks
+tile.tonalli:chiseled_volcanic_stone.name=Chiseled Volcanic Stone
+tile.tonalli:mossy_volcanic_stone_bricks.name=Mossy Volcanic Stone Bricks
+tile.tonalli:polished_volcanic_stone.name=Polished Volcanic Stone
+tile.tonalli:volcanic_stone.name=Volcanic Stone
+tile.tonalli:volcanic_stone_bricks.name=Volcanic Stone Bricks
 
-tile.to:cempasuchil.name=Cempasuchil
-tile.to:engraved_stone.name=Engraved Stone
-tile.to:engraved_gold.name=Engraved Gold
+tile.tonalli:cempasuchil.name=Cempasuchil
+tile.tonalli:engraved_stone.name=Engraved Stone
+tile.tonalli:engraved_gold.name=Engraved Gold
 
-tile.to:protection_altar.name=Protection Altar
-tile.to:ahuizotl_altar.name=Ahuizotl Altar
+tile.tonalli:protection_altar.name=Protection Altar
+tile.tonalli:ahuizotl_altar.name=Ahuizotl Altar
 
-tile.to:mictlan_spawner.name=Mictlan Spawner
-tile.to:mictlan_vault.name=Mictlan Vault
-tile.to:mictlan_vault_ominous.name=Mictlan Vault Ominous
-tile.to:jade_block.name=Jade Block
+tile.tonalli:mictlan_spawner.name=Mictlan Spawner
+tile.tonalli:mictlan_vault.name=Mictlan Vault
+tile.tonalli:mictlan_vault_ominous.name=Mictlan Vault Ominous
+tile.tonalli:jade_block.name=Jade Block
 
 ### ITEMS ###
+item.tonalli:cempasuchil=Cempasuchil
 
-item.to:ahuitzolt_heart.name=Ahuizotl's Heart
-item.to:corn.name=Corn
-item.to:jade_fragment.name=Jade Fragment
-item.to:jade_heart.name=Jade Heart
-item.to:jade_key.name=Jade Key
-item.to:macuahuitl.name=Macuahuitl
-item.to:mictlan_key.name=Mictlan Key
-item.to:sun_stone.name=Sun Stone
-item.to:chile.name=Chile
-item.to:pozole.name=Pozole
-item.to:obsidian_fragment=Obsidian Fragment
-item.to:obsidian_spear=Obsidian Spear
-item.to:tlaloc_jewel=Tlaloc Jewel
+item.tonalli:ahuitzolt_heart.name=Ahuizotl's Heart
+item.tonalli:corn.name=Corn
+item.tonalli:jade_fragment.name=Jade Fragment
+item.tonalli:jade_heart.name=Jade Heart
+item.tonalli:jade_key.name=Jade Key
+item.tonalli:macuahuitl.name=Macuahuitl
+item.tonalli:mictlan_key.name=Mictlan Key
+item.tonalli:sun_stone.name=Sun Stone
+item.tonalli:chile.name=Chile
+item.tonalli:pozole.name=Pozole
+item.tonalli:obsidian_fragment=Obsidian Fragment
+item.tonalli:obsidian_spear=Obsidian Spear
+item.tonalli:tlaloc_jewel=Tlaloc Jewel
+item.tonalli:aztec_whistle=Aztec Whistle
+item.tonalli:music_disc_huitzilopochtli=§eMusic Disc\n§7Huitzilopochtli - The Mesoamerican Orchestra
+item.tonalli:music_disc_quetzalcoatl=§eMusic Disc\n§7Quetzalcoatl - The Mesoamerican Orchestra
+item.tonalli:music_disc_tezcatlipoca=§eMusic Disc\n§7Tezcatlipoca - The Mesoamerican Orchestra
 
 #### ENTITIES ###
+entity.tonalli:solar_champion.name=Sun Champion
+item.spawn_egg.entity.tonalli:solar_champion.name=Sun Champion
 
-entity.to:ahuizolt.name=Ahuizolt
-entity.to:ahuizolt_death.name=Ahuizolt
-item.spawn_egg.entity.to:ahuizolt.name=Ahuizolt Spawn Egg
+entity.tonalli:solar_herald.name=Solar Herald
+item.spawn_egg.entity.tonalli:solar_herald.name=Solar Herald
 
-entity.to:jaguar_warrior.name=Jaguar Warrior
-item.spawn_egg.entity.to:jaguar_warrior.name=Jaguar Warrior Spawn Egg
+entity.tonalli:ahuizotl.name=Ahuizolt
+entity.tonalli:ahuizotl_death.name=Ahuizolt
+item.spawn_egg.entity.tonalli:ahuizotl.name=Ahuizolt Spawn Egg
 
-entity.to:sun_follower.name=Sun Follower
-item.spawn_egg.entity.to:sun_follower.name=Sun Follower Spawn Egg
+entity.tonalli:jaguar_warrior.name=Jaguar Warrior
+item.spawn_egg.entity.tonalli:jaguar_warrior.name=Jaguar Warrior Spawn Egg
 
-entity.to:tezcatlipoca_follower.name=Tezcatlipoca Follower
-item.spawn_egg.entity.to:tezcatlipoca_follower.name=Tezcatlipoca Follower Spawn Egg
+entity.tonalli:solar_follower.name=Sun Follower
+item.spawn_egg.entity.tonalli:solar_follower.name=Sun Follower Spawn Egg
+
+entity.tonalli:tezcatlipoca_follower.name=Tezcatlipoca Follower
+item.spawn_egg.entity.tonalli:tezcatlipoca_follower.name=Tezcatlipoca Follower Spawn Egg
+
+entity.tonalli:teopixqui_jade.name=Teopixqui Jade
+item.spawn_egg.entity.tonalli:teopixqui_jade.name=Teopixqui Jade Spawn Egg
+
+entity.tonalli:jade_mask.name=Jade Mask
+item.spawn_egg.entity.tonalli:jade_mask.name=Jade Mask Spawn Egg
+
+entity.tonalli:the_constructor.name=The Constructor
+item.spawn_egg.entity.tonalli:the_constructor.name=The Constructor Spawn Egg

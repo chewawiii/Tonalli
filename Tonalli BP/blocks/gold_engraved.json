@@ -1,13 +1,31 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:block": {
 		"description": {
-			"identifier": "to:engraved_gold",
+			"identifier": "tonalli:engraved_gold",
 			"menu_category": {
 				"category": "construction"
 			}
 		},
 		"components": {
+			"minecraft:geometry": "minecraft:geometry.full_block",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "engraved_gold",
+					"render_method": "alpha_test"
+				},
+				"up": {
+					"texture": "veneered_estuco_top",
+					"render_method": "alpha_test"
+				},
+				"down": {
+					"texture": "veneered_estuco_top",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:sound": {
+				"sound": "stone"
+			},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 3,
 				"item_specific_speeds": [

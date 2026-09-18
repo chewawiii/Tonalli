@@ -1,0 +1,128 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.ahuizotl.attack": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"roar": "query.variant == 3"
+						},
+						{
+							"attack": "query.is_delayed_attacking && query.variant == 0"
+						},
+						{
+							"tail_attack": "query.is_delayed_attacking && query.variant == 1"
+						}
+					]
+				},
+				"roar": {
+					"animations": ["roar"],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					]
+				},
+				"attack": {
+					"animations": ["attack"],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					]
+				},
+				"tail_attack": {
+					"animations": ["tail_attack"],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.ahuizotl.move": {
+			"states": {
+				"default": {
+					"animations": ["idle"],
+					"transitions": [
+						{
+							"emerging": "query.is_emerging"
+						},
+						{
+							"run": "query.modified_move_speed > 0.1 && query.has_target"
+						},
+						{
+							"walk": "query.modified_move_speed > 0.1"
+						}
+					]
+				},
+				"emerging": {
+					"animations": ["spawn"],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					]
+				},
+				"walk": {
+					"animations": ["walk"],
+					"transitions": [
+						{
+							"default": "query.modified_move_speed < 0.1"
+						},
+						{
+							"run": "query.modified_move_speed > 0.1 && query.has_target"
+						}
+					]
+				},
+				"run": {
+					"animations": ["run"],
+					"transitions": [
+						{
+							"default": "query.modified_move_speed < 0.1"
+						},
+						{
+							"walk": "query.modified_move_speed > 0.1 && !query.has_target"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.ahuizotl.death": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": ["death"]
+				}
+			}
+		},
+
+		"controller.animation.constructor.attack": {
+			"states": {
+				"default": {
+					"transitions": [
+						{ "ground_slam": "query.is_delayed_attacking && query.skin_id == 0" },
+						{ "single_arm_attack": "query.is_delayed_attacking && query.skin_id == 1" },
+						{ "death": "query.is_emerging" }
+					]
+				},
+				"ground_slam": {
+					"animations": ["ground_slam"],
+					"blend_transition": 0.1,
+					"transitions": [{ "default": "!query.is_delayed_attacking" }]
+				},
+				"single_arm_attack": {
+					"animations": ["single_arm_attack"],
+					"blend_transition": 0.1,
+					"transitions": [{ "default": "!query.is_delayed_attacking" }]
+				},
+				"death": {
+					"animations": ["death_disassembly"],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

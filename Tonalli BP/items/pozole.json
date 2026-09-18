@@ -2,7 +2,7 @@
 	"format_version": "1.26.30",
 	"minecraft:item": {
 		"description": {
-			"identifier": "to:pozole",
+			"identifier": "tonalli:pozole",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -22,7 +22,7 @@
 			"minecraft:tags": {
 				"tags": ["minecraft:is_food"]
 			},
-			"to:pozole_effect": {
+			"tonalli:pozole_effect": {
 				"name": "strength",
 				"duration": 200,
 				"amplifier": 0

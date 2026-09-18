@@ -1,0 +1,63 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.jade_mask.melee": {
+			"states": {
+				"default": {
+					"transitions": [
+						{ "attack_1": "query.is_delayed_attacking && query.mark_variant == 0" },
+						{ "attack_2": "query.is_delayed_attacking && query.mark_variant == 1" },
+						{ "attack_3": "query.is_delayed_attacking && query.mark_variant == 2" }
+					]
+				},
+				"attack_1": {
+					"animations": ["attack_1"],
+					"blend_transition": 0.1,
+					"transitions": [{ "default": "!query.is_delayed_attacking" }]
+				},
+				"attack_2": {
+					"animations": ["attack_2"],
+					"blend_transition": 0.1,
+					"transitions": [{ "default": "!query.is_delayed_attacking" }]
+				},
+				"attack_3": {
+					"animations": ["attack_3"],
+					"blend_transition": 0.1,
+					"transitions": [{ "default": "!query.is_delayed_attacking" }]
+				}
+			}
+		},
+		"controller.animation.teopixqui_jade.skill": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"summon_allies": "query.mark_variant == 0 && !query.is_sheared"
+						},
+						{
+							"ranged_attack": "query.mark_variant == 1 && !query.is_sheared"
+						},
+						{
+							"heal_allies": "query.mark_variant == 2 && !query.is_sheared"
+						}
+					]
+				},
+				"summon_allies": {
+					"animations": ["summon_allies"],
+					"blend_transition": 0.1,
+					"transitions": [{ "default": "query.mark_variant != 0" }]
+				},
+				"ranged_attack": {
+					"animations": ["skull_raise"],
+					"blend_transition": 0.1,
+					"transitions": [{ "default": "query.mark_variant != 1" }]
+				},
+				"heal_allies": {
+					"animations": ["heal_allies"],
+					"blend_transition": 0.1,
+					"transitions": [{ "default": "query.mark_variant != 2" }]
+				}
+			}
+		}
+	}
+}

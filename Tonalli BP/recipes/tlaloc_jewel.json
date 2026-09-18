@@ -2,7 +2,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "to:tlaloc_jewel"
+			"identifier": "tonalli:tlaloc_jewel"
 		},
 		"tags": ["crafting_table"],
 		"key": {
@@ -10,7 +10,7 @@
 				"item": "minecraft:gold_nugget"
 			},
 			"j": {
-				"item": "to:jade_fragment"
+				"item": "tonalli:jade_fragment"
 			},
 			"h": {
 				"item": "minecraft:heart_of_the_sea"
@@ -18,7 +18,7 @@
 		},
 		"pattern": ["ggg", "ghg", "jjj"],
 		"result": {
-			"item": "to:tlaloc_jewel",
+			"item": "tonalli:tlaloc_jewel",
 			"count": 1
 		}
 	}

@@ -19,7 +19,7 @@
 				},
 				{
 					"type": "item",
-					"name": "to:chile",
+					"name": "tonalli:chile",
 					"weight": 1,
 					"functions": [
 						{
@@ -52,7 +52,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "to:jade_fragment",
+					"name": "tonalli:jade_fragment",
 					"weight": 1,
 					"functions": [
 						{

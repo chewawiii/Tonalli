@@ -1,0 +1,34 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "tonalli:the_constructor",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/the_constructor_texture.png"
+			},
+			"geometry": {
+				"default": "geometry.the_constructor"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "the_constructor_spawn_egg"
+			},
+			"animations": {
+				"idle": "animation.the_constructor.idle",
+				"walk": "animation.the_constructor.walk",
+				"ground_slam": "animation.the_constructor.ground_slam",
+				"single_arm_attack": "animation.the_constructor.single_arm_attack",
+				"look_at_target": "animation.basic.look_at_target",
+				"walk_controller": "controller.animation.walk",
+				"death_disassembly": "animation.the_constructor.death_disassembly",
+				"attack_controller": "controller.animation.constructor.attack"
+			},
+			"scripts": {
+				"animate": ["walk_controller", "look_at_target", "attack_controller"]
+			}
+		}
+	}
+}

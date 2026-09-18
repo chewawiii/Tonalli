@@ -1,0 +1,238 @@
+{
+	"format_version": "1.26.40",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "tonalli:the_constructor",
+			"is_experimental": false,
+			"is_spawnable": true,
+			"is_summonable": true
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": ["tonalli", "monster", "the_constructor", "azteca"]
+			},
+			"minecraft:health": {
+				"value": 300,
+				"max": 300
+			},
+			"minecraft:collision_box": {
+				"height": 3.5,
+				"width": 2
+			},
+			"minecraft:movement": {
+				"value": 0.2
+			},
+
+			"minecraft:physics": {},
+			"minecraft:pushable_by_entity": {},
+			"minecraft:pushable_by_block": {},
+
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:navigation.walk": {},
+
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"within_radius": 25,
+				"reselect_targets": true,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "iron_golem"
+								}
+							]
+						}
+					}
+				]
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 3
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 7
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"cause": "lava",
+						"damage_per_tick": 4,
+						"filters": { "test": "in_lava" }
+					}
+				]
+			},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			}
+		},
+		"component_groups": {
+			"tonalli:death_event": {
+				"minecraft:on_death": {
+					"event": "tonalli:spawn_death_entity"
+				}
+			},
+			"tonalli:ground_slam_attack": {
+				"minecraft:skin_id": {
+					"value": 0
+				},
+				"minecraft:attack": {
+					"damage": 80
+				},
+				"minecraft:timer": {
+					"time": 2.67,
+					"looping": false,
+					"time_down_event": {
+						"event": "tonali:randomize_attack"
+					}
+				},
+				"minecraft:behavior.delayed_attack": {
+					"priority": 0,
+					"attack_duration": 2.67,
+					"hit_delay_pct": 0.55,
+					"reach_multiplier": 2
+				}
+			},
+			"tonalli:single_arm_attack": {
+				"minecraft:skin_id": {
+					"value": 1
+				},
+				"minecraft:attack": {
+					"damage": 60
+				},
+				"minecraft:timer": {
+					"time": 1.57,
+					"looping": false,
+					"time_down_event": {
+						"event": "tonali:randomize_attack"
+					}
+				},
+				"minecraft:behavior.delayed_attack": {
+					"priority": 0,
+					"attack_duration": 1.57,
+					"hit_delay_pct": 0.45,
+					"reach_multiplier": 2
+				}
+			},
+			"tonalli:death": {
+				"minecraft:loot": {
+					"table": "loot_tables/entities/the_constructor.json"
+				},
+				"minecraft:experience_reward": {
+					"on_death": "query.last_hit_by_player ? Math.floor(Math.random(0,11)) + 20 : 0"
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "contact",
+							"deals_damage": "no"
+						},
+						{
+							"cause": "entity_attack",
+							"deals_damage": "no"
+						},
+						{
+							"cause": "fire",
+							"deals_damage": "no"
+						},
+						{
+							"cause": "projectile",
+							"deals_damage": "no"
+						},
+						{
+							"cause": "lava",
+							"deals_damage": "no"
+						},
+						{
+							"cause": "magic",
+							"deals_damage": "no"
+						},
+						{
+							"cause": "block_explosion",
+							"deals_damage": "no"
+						}
+					]
+				},
+				"minecraft:movement": {
+					"value": 0
+				},
+				"minecraft:behavior.emerge": {
+					"priority": 0,
+					"duration": 4.5,
+					"on_done": {
+						"event": "tonalli:end_death"
+					}
+				}
+			},
+			"tonalli:scale": {
+				"minecraft:scale": {
+					"value": 0.0000001
+				}
+			}
+		},
+		"events": {
+			"tonalli:spawn_death_entity": {
+				"add": {
+					"component_groups": ["tonalli:scale"]
+				},
+				"queue_command": {
+					"command": "summon tonalli:the_constructor ~ ~ ~ ~ ~ tonalli:start_death"
+				}
+			},
+			"tonalli:start_death": {
+				"add": {
+					"component_groups": ["tonalli:death"]
+				}
+			},
+			"tonalli:end_death": {
+				"queue_command": {
+					"command": "kill @s"
+				}
+			},
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": ["tonalli:ground_slam_attack", "tonalli:death_event"]
+				}
+			},
+			"tonali:randomize_attack": {
+				"sequence": [
+					{
+						"remove": {
+							"component_groups": ["tonalli:ground_slam_attack", "tonalli:single_arm_attack"]
+						}
+					},
+					{
+						"randomize": [
+							{
+								"weight": 1,
+								"add": {
+									"component_groups": ["tonalli:ground_slam_attack"]
+								}
+							},
+							{
+								"weight": 1,
+								"add": {
+									"component_groups": ["tonalli:single_arm_attack"]
+								}
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

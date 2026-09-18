@@ -1,0 +1,26 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.tezcatlipoca_follower": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.base_1",
+						"Texture.base_2",
+						"Texture.black_1",
+						"Texture.black_2",
+						"Texture.black_3",
+						"Texture.orange"
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": ["Array.skins[query.variant]"]
+		}
+	}
+}

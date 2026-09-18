@@ -2,7 +2,7 @@
 	"format_version": "1.26.30",
 	"minecraft:item": {
 		"description": {
-			"identifier": "to:macuahuitl",
+			"identifier": "tonalli:macuahuitl",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -31,7 +31,7 @@
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": ["to:obsidian_fragment"],
+						"items": ["tonalli:obsidian_fragment"],
 						"repair_amount": 20
 					}
 				]

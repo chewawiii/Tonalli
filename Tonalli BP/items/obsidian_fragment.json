@@ -2,7 +2,7 @@
 	"format_version": "1.26.30",
 	"minecraft:item": {
 		"description": {
-			"identifier": "to:obsidian_fragment",
+			"identifier": "tonalli:obsidian_fragment",
 			"menu_category": {
 				"category": "items"
 			}

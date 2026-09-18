@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "tonalli:jade_mask",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/jade_mask_texture.png"
+			},
+			"geometry": {
+				"default": "geometry.jade_mask"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "jade_mask_spawn_egg"
+			},
+			"sound_effects": {
+				"tonalli.heavy_attack": "tonalli.heavy_attack"
+			},
+			"animations": {
+				"idle": "animation.jade_mask.idle",
+				"walk": "animation.jade_mask.walk",
+				"run": "animation.jade_mask.run",
+				"attack_1": "animation.jade_mask.attack_1",
+				"attack_2": "animation.jade_mask.attack_2",
+				"attack_3": "animation.jade_mask.attack_3",
+				"look_at_target": "animation.basic.look_at_target",
+				"walk_controller": "controller.animation.run_target",
+				"melee_controller": "controller.animation.jade_mask.melee"
+			},
+			"scripts": {
+				"animate": ["walk_controller", "look_at_target", "melee_controller"]
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "tonalli:ahuizotl",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/ahuizotl_texture.png"
+			},
+			"geometry": {
+				"default": "geometry.ahuizotl"
+			},
+			"render_controllers": ["controller.render.default"],
+			"animations": {
+				"walk_controller": "controller.animation.ahuizotl.move",
+				"attack_controller": "controller.animation.ahuizotl.attack",
+				"idle": "animation.ahuizotl.idle",
+				"walk": "animation.ahuizotl.walk",
+				"run": "animation.ahuizotl.run",
+				"attack": "animation.ahuizotl.bite_attack",
+				"tail_attack": "animation.ahuizotl.tail_hand_attack",
+				"roar": "animation.ahuizotl.roar",
+				"spawn": "animation.ahuizotl.spawn",
+				"look_at_target": "animation.ahuizotl.look_at_target"
+			},
+			"scripts": {
+				"animate": ["walk_controller", "attack_controller", "look_at_target"]
+			},
+			"spawn_egg": {
+				"texture": "ahuizotl_spawn_egg"
+			}
+		}
+	}
+}

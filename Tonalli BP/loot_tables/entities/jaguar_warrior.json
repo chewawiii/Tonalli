@@ -57,7 +57,7 @@
 				},
 				{
 					"type": "item",
-					"name": "to:corn",
+					"name": "tonalli:corn",
 					"weight": 1,
 					"functions": [
 						{

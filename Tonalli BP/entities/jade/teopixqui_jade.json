@@ -1,0 +1,247 @@
+{
+	"format_version": "1.26.40",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "tonalli:teopixqui_jade",
+			"is_experimental": false,
+			"is_spawnable": true,
+			"is_summonable": true,
+			"scripts": {
+				"animate": ["heal_allies_controller", "ranged_attack_controller"]
+			},
+			"animations": {
+				"heal_allies_controller": "controller.animation.teopixqui_jade.heal",
+				"heal_allies": "animation.teopixqui_jade.heal",
+				"ranged_attack_controller": "controller.animation.teopixqui.ranged",
+				"ranged_attack": "animation.teopixqui_jade.ranged"
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": ["tonalli", "monster", "teopixqui_jade", "jade"]
+			},
+			"minecraft:health": {
+				"value": 50,
+				"max": 50
+			},
+			"minecraft:attack": {
+				"damage": 1
+			},
+			"minecraft:collision_box": {
+				"height": 1.9,
+				"width": 0.6
+			},
+			"minecraft:movement": {
+				"value": 0.2
+			},
+
+			"minecraft:physics": {},
+			"minecraft:pushable_by_entity": {},
+			"minecraft:pushable_by_block": {},
+
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:navigation.walk": {},
+
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"within_radius": 25,
+				"reselect_targets": true,
+				"must_see": true,
+				"scan_interval": 20,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "iron_golem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "solar"
+								}
+							]
+						}
+					}
+				]
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 4
+			},
+			"minecraft:behavior.look_at_target": {
+				"priority": 5,
+				"look_distance": 10,
+				"probability": 0.8
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 8
+			},
+
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"cause": "lava",
+						"damage_per_tick": 4,
+						"filters": { "test": "in_lava" }
+					}
+				]
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/teopixqui_jade.json"
+			},
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player ? Math.floor(Math.random(0,11)) + 15 : 0"
+			},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			}
+		},
+		"component_groups": {
+			"to:cooldown": {
+				"minecraft:timer": {
+					"time": 2,
+					"looping": false,
+					"time_down_event": {
+						"event": "to:target_sensor"
+					}
+				},
+				"minecraft:on_hurt": {
+					"event": "to:target_sensor"
+				}
+			},
+			"to:target_sensor": {
+				"minecraft:is_sheared": {},
+				"minecraft:behavior.melee_attack": {
+					"priority": 0
+				},
+				"minecraft:target_nearby_sensor": {
+					"must_see": true,
+					"inside_range": 5,
+					"on_inside_range": {
+						"event": "to:do_ranged_attack"
+					},
+					"outside_range": 6,
+					"on_outside_range": {
+						"event": "to:do_ranged_attack"
+					}
+				}
+			},
+			"to:ranged_attack": {
+				"minecraft:mark_variant": {
+					"value": 1
+				},
+				"minecraft:timer": {
+					"time": 6.9,
+					"looping": false,
+					"time_down_event": {
+						"event": "to:do_summon_allies"
+					}
+				}
+			},
+			"to:summon_allies": {
+				"minecraft:mark_variant": {
+					"value": 0
+				},
+				"minecraft:timer": {
+					"time": 3,
+					"looping": false,
+					"time_down_event": {
+						"event": "to:cooldown"
+					}
+				},
+				"minecraft:behavior.summon_entity": {
+					"priority": 0,
+					"summon_choices": [
+						{
+							"weight": 1,
+							"cast_duration": 3,
+							"cooldown_time": 1,
+							"sequence": [
+								{
+									"shape": "circle",
+									"target": "target",
+									"base_delay": 1.4,
+									"entity_type": "tonalli:tezcatlipoca_follower",
+									"num_entities_spawned": 3,
+									"size": 2,
+									"summon_event": "to:summon_particle"
+								},
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 0.5,
+									"entity_type": "tonalli:jade_mask",
+									"num_entities_spawned": 1,
+									"size": 1,
+									"summon_event": "to:summon_particle"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": ["to:target_sensor"]
+				}
+			},
+			"to:target_sensor": {
+				"remove": {
+					"component_groups": ["to:cooldown"]
+				},
+				"add": {
+					"component_groups": ["to:target_sensor"]
+				}
+			},
+			"to:cooldown": {
+				"remove": {
+					"component_groups": ["to:summon_allies", "to:ranged_attack", "to:target_sensor"]
+				},
+				"add": {
+					"component_groups": ["to:cooldown"]
+				}
+			},
+			"to:do_ranged_attack": {
+				"sequence": [
+					{
+						"remove": {
+							"component_groups": ["to:target_sensor"]
+						}
+					},
+					{
+						"add": {
+							"component_groups": ["to:ranged_attack"]
+						}
+					}
+				]
+			},
+			"to:do_summon_allies": {
+				"sequence": [
+					{
+						"remove": {
+							"component_groups": ["to:ranged_attack"]
+						}
+					},
+					{
+						"add": {
+							"component_groups": ["to:summon_allies"]
+						}
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,110 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.the_constructor",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 6.5,
+				"visible_bounds_offset": [0, 2.75, 0]
+			},
+			"bones": [
+				{
+					"name": "All",
+					"pivot": [0, 0, 0],
+					"rotation": [-180, 0, 180]
+				},
+				{
+					"name": "Leg2",
+					"parent": "All",
+					"pivot": [-12, 22, 0],
+					"rotation": [-180, 0, 180],
+					"cubes": [
+						{
+							"origin": [-5, 0.15847, 4.75118],
+							"size": [16, 22, 16],
+							"pivot": [-5, 0.15847, 5.75118],
+							"rotation": [-180, 0, -180],
+							"uv": [56, 126]
+						}
+					]
+				},
+				{
+					"name": "Leg",
+					"parent": "All",
+					"pivot": [12, 21, 0],
+					"rotation": [-180, 0, -180],
+					"cubes": [
+						{
+							"origin": [-11, 0.0001, 5.97113],
+							"size": [16, 22, 16],
+							"pivot": [5, 0.0001, 6.97113],
+							"rotation": [-180, 0, 180],
+							"uv": [120, 126]
+						}
+					]
+				},
+				{
+					"name": "Body",
+					"parent": "All",
+					"pivot": [0, 17, 0],
+					"cubes": [{ "origin": [-12, 14, -12], "size": [24, 18, 24], "uv": [0, 64] }]
+				},
+				{
+					"name": "Body2",
+					"parent": "Body",
+					"pivot": [0, 31, 0],
+					"rotation": [-180, 0, 180],
+					"cubes": [
+						{
+							"origin": [-16, 25, -25],
+							"size": [32, 32, 32],
+							"pivot": [0, 40, -6],
+							"rotation": [165, 0, -180],
+							"uv": [0, 0]
+						}
+					]
+				},
+				{
+					"name": "Head",
+					"parent": "Body2",
+					"pivot": [0, 50, -16],
+					"cubes": [
+						{ "origin": [-8, 43, -28], "size": [16, 16, 16], "uv": [128, 0] },
+						{ "origin": [-16, 43, -23], "size": [32, 32, 0], "uv": [138, 46] }
+					]
+				},
+				{
+					"name": "Arm2",
+					"parent": "Body2",
+					"pivot": [17, 45, -14],
+					"cubes": [
+						{
+							"origin": [28, 2, -10],
+							"size": [14, 48, 14],
+							"pivot": [29, 24, -9],
+							"rotation": [-180, 0, -180],
+							"uv": [96, 64]
+						}
+					]
+				},
+				{
+					"name": "Arm",
+					"parent": "Body2",
+					"pivot": [-17, 45, -14],
+					"cubes": [
+						{
+							"origin": [-42, 2, -10],
+							"size": [14, 48, 14],
+							"pivot": [-29, 24, -9],
+							"rotation": [-180, 0, 180],
+							"uv": [0, 106]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,15 @@
+{
+	"format_version": "1.26.30",
+	"minecraft:item": {
+		"description": {
+			"identifier": "tonalli:music_disc_quetzalcoatl",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:icon": "quetzalcoatl_disc",
+			"minecraft:max_stack_size": 1
+		}
+	}
+}

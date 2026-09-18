@@ -2,7 +2,7 @@
 	"format_version": "1.26.30",
 	"minecraft:item": {
 		"description": {
-			"identifier": "to:chile",
+			"identifier": "tonalli:chile",
 			"menu_category": {
 				"category": "nature"
 			}

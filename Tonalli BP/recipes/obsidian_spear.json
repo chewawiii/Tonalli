@@ -2,12 +2,12 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "to:obsidian_spear"
+			"identifier": "tonalli:obsidian_spear"
 		},
 		"tags": ["crafting_table"],
 		"key": {
 			"o": {
-				"item": "to:obsidian_fragment"
+				"item": "tonalli:obsidian_fragment"
 			},
 			"s": {
 				"item": "minecraft:stick"
@@ -15,7 +15,7 @@
 		},
 		"pattern": ["  o", " s ", "s  "],
 		"result": {
-			"item": "to:obsidian_spear",
+			"item": "tonalli:obsidian_spear",
 			"count": 1
 		}
 	}

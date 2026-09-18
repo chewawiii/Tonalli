@@ -1,13 +1,31 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:block": {
 		"description": {
-			"identifier": "to:ornamental_veneered_estuco",
+			"identifier": "tonalli:ornamental_veneered_estuco",
 			"menu_category": {
 				"category": "construction"
 			}
 		},
 		"components": {
+			"minecraft:geometry": "minecraft:geometry.full_block",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "ornamental_veneered_estuco",
+					"render_method": "alpha_test"
+				},
+				"up": {
+					"texture": "veneered_estuco_top",
+					"render_method": "alpha_test"
+				},
+				"down": {
+					"texture": "white_estuco",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:sound": {
+				"sound": "stone"
+			},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 1.5,
 				"item_specific_speeds": [

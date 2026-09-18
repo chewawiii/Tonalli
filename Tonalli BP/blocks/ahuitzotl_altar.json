@@ -1,0 +1,97 @@
+{
+	"format_version": "1.26.50",
+	"minecraft:block": {
+		"description": {
+			"identifier": "tonalli:ahuizotl_altar",
+			"menu_category": {
+				"category": "items"
+			},
+			"states": {
+				"to:is_active": [false, true]
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": ["minecraft:cardinal_direction"],
+					"y_rotation_offset": 90
+				}
+			}
+		},
+		"components": {
+			"tonalli:ahuizotl_altar": {
+				"entityId": "tonalli:ahuizotl",
+				"itemId": "tonalli:tlaloc_jewel",
+				"cooldown": "30" // minutos
+			},
+			"minecraft:block_entity": {
+				"dynamic_properties": true
+			},
+
+			"minecraft:geometry": "geometry.ahuizotl_altar",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "ahuizotl_altar",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:sound": {
+				"sound": "stone"
+			},
+			"minecraft:selection_box": {
+				"origin": [-8, 0, -8],
+				"size": [16, 12, 16]
+			},
+			"minecraft:destructible_by_mining": false,
+			"minecraft:destructible_by_explosion": false,
+			"minecraft:map_color": "#6A6D6A",
+			"minecraft:tick": {
+				"interval_range": [20, 20],
+				"looping": true
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 90, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 180, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 270, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 0, 0]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('to:is_active')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "active_ahuizotl_altar",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			}
+		]
+	}
+}

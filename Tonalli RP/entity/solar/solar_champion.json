@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "tonalli:solar_champion",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/solar_champion_texture.png"
+			},
+			"geometry": {
+				"default": "geometry.solar_champion"
+			},
+			"render_controllers": ["controller.render.default"],
+			"sound_effects": {
+				"tonalli.heavy_attack": "tonalli.heavy_attack"
+			},
+			"animations": {
+				"walk_controller": "controller.animation.walk",
+				"attack_controller": "controller.animation.solar_champion.melee",
+				"idle": "animation.solar_champion.idle",
+				"walk": "animation.solar_champion.walking",
+				"attack_1": "animation.solar_champion.attack_1",
+				"attack_2": "animation.solar_champion.attack_2",
+				"attack_3": "animation.solar_champion.attack_3",
+				"shield_defense": "animation.solar_champion.shield_defense",
+				"look_at_target": "animation.basic.look_at_target"
+			},
+			"scripts": {
+				"animate": ["walk_controller", "attack_controller", "look_at_target"]
+			},
+			"spawn_egg": {
+				"texture": "solar_champion_spawn_egg"
+			}
+		}
+	}
+}

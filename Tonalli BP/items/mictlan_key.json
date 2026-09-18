@@ -2,7 +2,7 @@
 	"format_version": "1.26.30",
 	"minecraft:item": {
 		"description": {
-			"identifier": "to:mictlan_key",
+			"identifier": "tonalli:mictlan_key",
 			"menu_category": {
 				"category": "items"
 			}

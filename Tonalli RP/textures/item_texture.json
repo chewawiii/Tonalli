@@ -29,18 +29,6 @@
 		"cempasuchil": {
 			"textures": "textures/blocks/cempasuchil.png"
 		},
-		"ahuizotl_spawn_egg": {
-			"textures": "textures/items/spawn_eggs/ahuizotl_spawn_egg.png"
-		},
-		"jaguar_warrior_spawn_egg": {
-			"textures": "textures/items/spawn_eggs/jaguar_warrior_spawn_egg.png"
-		},
-		"sun_follower_spawn_egg": {
-			"textures": "textures/items/spawn_eggs/sun_follower_spawn_egg.png"
-		},
-		"tezcatlipoca_follower_spawn_egg": {
-			"textures": "textures/items/spawn_eggs/tezcatlipoca_follower_spawn_egg.png"
-		},
 		"chile": {
 			"textures": "textures/items/chile.png"
 		},
@@ -55,6 +43,50 @@
 		},
 		"tlaloc_jewel": {
 			"textures": "textures/items/tlaloc_jewel.png"
+		},
+		"aztec_whistle": {
+			"textures": "textures/items/aztec_whistle.png"
+		},
+		"huitzilopochtli_disc": {
+			"textures": "textures/items/huitzilopochtli_disc.png"
+		},
+		"tezcatlipoca_disc": {
+			"textures": "textures/items/tezcatlipoca_disc.png"
+		},
+		"quetzalcoatl_disc": {
+			"textures": "textures/items/quetzalcoatl_disc.png"
+		},
+
+		// Spawn Eggs
+		"ahuizotl_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/ahuizotl_spawn_egg.png"
+		},
+		"jaguar_warrior_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/jaguar_warrior_spawn_egg.png"
+		},
+		"quetzalcoatl_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/quetzalcoatl_spawn_egg.png"
+		},
+		"solar_herald_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/solar_herald.png"
+		},
+		"solar_champion_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/solar_champeon.png"
+		},
+		"solar_follower_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/solar_follower_spawn_egg.png"
+		},
+		"tezcatlipoca_follower_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/tezcatlipoca_follower_spawn_egg.png"
+		},
+		"jade_mask_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/jade_mask_spawn_egg.png"
+		},
+		"teopixqui_jade_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/teopixqui_jade_spawn_egg.png"
+		},
+		"the_constructor_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/the_constructor_spawn_egg.png"
 		}
 	}
 }
